@@ -1,0 +1,48 @@
+body {
+    background-color: #404050;
+    color: #fff;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+app-root {
+    min-height: 100vh;
+}
+
+.screen {
+    min-height: 100vh;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: column;
+}
+
+.page-content {
+    flex-grow: 1;
+    margin: 40px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2em 4em;
+}
+
+.menu-item {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-left: 4em;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
