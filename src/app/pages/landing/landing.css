@@ -1,0 +1,19 @@
+.logo-section {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.big-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head-line {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+}

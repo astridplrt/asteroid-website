@@ -1,6 +1,37 @@
+@font-face {
+	font-family: 'Quicksand';
+    font-weight: 300;
+	src: url(\assets\fonts\Quicksand-Light.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: 'Quicksand';
+    font-weight: 400;
+	src: url(\assets\fonts\Quicksand-Regular.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: 'Quicksand';
+    font-weight: 500;
+	src: url(\assets\fonts\Quicksand-Medium.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: 'Quicksand';
+    font-weight: 600;
+	src: url(\assets\fonts\Quicksand-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: 'Quicksand';
+    font-weight: 700;
+	src: url(\assets\fonts\Quicksand-Bold.ttf) format("truetype");
+}
+
 body {
-    background-color: #404050;
+    background-color: #282742;
     color: #fff;
+    font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
     justify-content: space-between;
 }
@@ -12,7 +43,6 @@ app-root {
 .screen {
     min-height: 100vh;
     display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     flex-direction: column;
 }
 
@@ -22,6 +52,8 @@ app-root {
 }
 
 .menu {
+    font-weight: 700;
+    letter-spacing: 1px;
     display: flex;
     justify-content: flex-end;
     margin: 2em 4em;
@@ -43,6 +75,7 @@ footer {
     padding: 20px;
 }
 
-h1 {
-    text-align: center;
+.page-container {
+    width: 85vw;
+    margin: auto;
 }
