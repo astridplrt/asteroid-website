@@ -29,8 +29,8 @@
 }
 
 body {
-    background-color: #282742;
-    color: #fff;
+    /* background-color: #282742; */
+    /* color: #fff; */
     font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
     justify-content: space-between;
@@ -51,17 +51,20 @@ app-root {
     margin: 40px 0;
 }
 
-.menu {
-    font-weight: 700;
-    letter-spacing: 1px;
-    display: flex;
-    justify-content: flex-end;
-    margin: 2em 4em;
-}
+.header-logo {
+    cursor: pointer;
+  }
+  
+  .header-logo img {
+    width: 180px;
+    height: auto;
+  }
 
 .menu-item {
     font-size: 1.2em;
+    font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 1px;
     margin-left: 4em;
     cursor: pointer;
 }

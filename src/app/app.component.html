@@ -1,19 +1,24 @@
 <div class="screen">
-    <header>
-        <div class="menu">
-            <div class="menu-item" routerLink="landing">accueil</div>
-            <div class="menu-item" routerLink="about">à propos</div>
-            <div class="menu-item" routerLink="portfolio">portfolio</div>
-            <div class="menu-item" routerLink="contact">contact</div>
-        </div>
-    </header>
-    
-    <div class="page-content">
-        <router-outlet></router-outlet>
+  <header class="d-flex justify-content-between align-items-center px-5 py-4">
+    <div class="header-logo" routerLink="landing">
+      <img
+        src="assets\images\logo-asteroid-blue-gold.png"
+        alt="logo-asteroid-website"
+      />
     </div>
-    
-    <footer>
-        <hr>
-        <div class="footer">Here's a  footer</div>
-    </footer>  
+    <div class="menu d-flex">
+      <div class="menu-item" routerLink="about">à propos</div>
+      <div class="menu-item" routerLink="portfolio">portfolio</div>
+      <div class="menu-item" routerLink="contact">contact</div>
+    </div>
+  </header>
+
+  <div class="page-content">
+    <router-outlet></router-outlet>
+  </div>
+
+  <footer>
+    <hr />
+    <div class="footer">Here's a footer</div>
+  </footer>
 </div>
