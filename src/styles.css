@@ -1,84 +1,110 @@
 @font-face {
-	font-family: 'Quicksand';
-    font-weight: 300;
-	src: url(\assets\fonts\Quicksand-Light.ttf) format("truetype");
+  font-family: "Quicksand";
+  font-weight: 300;
+  src: url(\assets\fonts\Quicksand-Light.ttf) format("truetype");
 }
 
 @font-face {
-	font-family: 'Quicksand';
-    font-weight: 400;
-	src: url(\assets\fonts\Quicksand-Regular.ttf) format("truetype");
+  font-family: "Quicksand";
+  font-weight: 400;
+  src: url(\assets\fonts\Quicksand-Regular.ttf) format("truetype");
 }
 
 @font-face {
-	font-family: 'Quicksand';
-    font-weight: 500;
-	src: url(\assets\fonts\Quicksand-Medium.ttf) format("truetype");
+  font-family: "Quicksand";
+  font-weight: 500;
+  src: url(\assets\fonts\Quicksand-Medium.ttf) format("truetype");
 }
 
 @font-face {
-	font-family: 'Quicksand';
-    font-weight: 600;
-	src: url(\assets\fonts\Quicksand-SemiBold.ttf) format("truetype");
+  font-family: "Quicksand";
+  font-weight: 600;
+  src: url(\assets\fonts\Quicksand-SemiBold.ttf) format("truetype");
 }
 
 @font-face {
-	font-family: 'Quicksand';
-    font-weight: 700;
-	src: url(\assets\fonts\Quicksand-Bold.ttf) format("truetype");
+  font-family: "Quicksand";
+  font-weight: 700;
+  src: url(\assets\fonts\Quicksand-Bold.ttf) format("truetype");
 }
 
 body {
-    /* background-color: #282742; */
-    /* color: #fff; */
-    font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
-    min-height: 100vh;
-    justify-content: space-between;
+  font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
 app-root {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .screen {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-content {
-    flex-grow: 1;
-    margin: 40px 0;
+  flex-grow: 1;
+  margin: 40px 0;
 }
 
 .header-logo {
-    cursor: pointer;
-  }
-  
-  .header-logo img {
-    width: 180px;
-    height: auto;
-  }
+  cursor: pointer;
+}
+
+.header-logo img {
+  width: 80px;
+  height: auto;
+}
 
 .menu-item {
-    font-size: 1.2em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-left: 4em;
-    cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 4em;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  position: relative;
+}
+
+.menu-item:hover {
+  color: #62bda8;
+}
+
+.menu-item svg {
+  position: absolute;
+  left: -20%;
+  top: -44%;
+  width: 140%;
+  height: 160%;
+  opacity: 0;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
+}
+
+.menu-item.active {
+  color: #62bda8;
+}
+
+.menu-item.active svg {
+  opacity: 1;
+  stroke-dashoffset: 0;
+  transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 footer {
-    text-align: center;
-    text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .footer {
-    padding: 20px;
+  padding: 20px;
 }
 
 .page-container {
-    width: 85vw;
-    margin: auto;
+  width: 85vw;
+  margin: auto;
 }

@@ -2,14 +2,23 @@
   <header class="d-flex justify-content-between align-items-center px-5 py-4">
     <div class="header-logo" routerLink="landing">
       <img
-        src="assets\images\logo-asteroid-blue-gold.png"
+        src="assets\images\symbol-1-color-green.png"
         alt="logo-asteroid-website"
       />
     </div>
     <div class="menu d-flex">
-      <div class="menu-item" routerLink="about">à propos</div>
-      <div class="menu-item" routerLink="portfolio">portfolio</div>
-      <div class="menu-item" routerLink="contact">contact</div>
+      <div class="menu-item" routerLink="about" routerLinkActive="active">
+        à propos
+        <ng-container *ngTemplateOutlet="handdrawborder"></ng-container>
+      </div>
+      <div class="menu-item" routerLink="portfolio" routerLinkActive="active">
+        portfolio
+        <ng-container *ngTemplateOutlet="handdrawborder"></ng-container>
+      </div>
+      <div class="menu-item" routerLink="contact" routerLinkActive="active">
+        contact
+        <ng-container *ngTemplateOutlet="handdrawborder"></ng-container>
+      </div>
     </div>
   </header>
 
@@ -22,3 +31,20 @@
     <div class="footer">Here's a footer</div>
   </footer>
 </div>
+
+<ng-template #handdrawborder>
+  <svg
+    width="686"
+    height="187"
+    viewBox="0 0 686 187"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M197.5 51.5C110 42 2.63249 65.066 5.00001 107.5C7.36752 149.934 110 174.498 292 181C503.126 188.543 676.218 165.148 680.5 112.708C689.5 2.49998 288 -13.5 146.5 21"
+      stroke="#62BDA8"
+      stroke-width="9"
+      stroke-linecap="round"
+    />
+  </svg>
+</ng-template>
