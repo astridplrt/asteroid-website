@@ -1,19 +1,43 @@
 .logo-section {
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .big-logo {
-    width: 560px;
-    height: auto;
+  width: 560px;
+  height: auto;
 }
 
 .head-line {
-    color: #62BDA8;
-    margin-top: 40px;
-    text-align: center;
-    font-size: 2.4em;
-    font-weight: 400;
+  color: #62bda8;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: 400;
+}
+
+.presentation-section {
+  min-height: 100vh;
+  height: 1px; /* override the min-height to set 100% height to the child div */
+  background: center / auto 70% no-repeat
+      url("src\assets\images\portrait-bubble.png"),
+    #b84f54;
+  color: rgb(243, 242, 241);
+}
+
+.presentation-section p {
+  max-width: 25vw;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.presentation-section .presentation {
+  width: fit-content;
+}
+
+.n2,
+.n4 {
+  margin-left: auto;
 }
