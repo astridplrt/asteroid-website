@@ -21,14 +21,12 @@
 .presentation-section {
   min-height: 100vh;
   height: 1px; /* override the min-height to set 100% height to the child div */
-  background: center / auto 70% no-repeat
-      url("src\assets\images\portrait-bubble.png"),
-    #b84f54;
+  background: #b84f54;
   color: rgb(243, 242, 241);
 }
 
 .presentation-section p {
-  max-width: 25vw;
+  max-width: 20vw;
   margin: 0;
   font-size: 1.2em;
 }
@@ -40,4 +38,39 @@
 .n2,
 .n4 {
   margin-left: auto;
+}
+
+.textured-gradient img {
+  width: 100%;
+  height: auto;
+}
+
+.gradient-up {
+  transform: translateY(2px);
+}
+
+.gradient-down {
+  transform: translateY(-2px) rotate(0.5turn);
+}
+
+.bubble-portrait {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.bubble-portrait img {
+  width: 600px;
+}
+
+@media screen and (max-width: 568px) {
+  .bubble-portrait img {
+    width: 85vw;
+  }
+}
+
+@media screen and (min-width: 569px) and (max-width: 768px) {
+  .bubble-portrait img {
+    width: 70vw;
+  }
 }

@@ -106,5 +106,6 @@ footer {
 
 .frame {
   width: 85vw;
+  max-width: 90rem;
   margin: auto;
 }
