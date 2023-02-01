@@ -1,0 +1,62 @@
+// // @import "../../node_modules/bootstrap/scss/variables";
+
+// $primary: #1A2B44;
+// $secondary: white;
+// $tertiary: #FBC04D;
+// $quaternary: $grey-500;
+
+// $theme-colors: (
+//   (
+//     "tertiary":  $tertiary,
+//     "quaternary":  $quaternary
+//   )
+// );
+
+// $border-color: #eee;
+// $shadow-color: rgba(0, 0, 0, 0.075);
+// $shadow: 0 6px 20px $shadow-color;
+
+// $global-bg-color: $grey-100;
+
+// $enable-responsive-font-sizes: true;
+// $font-size-base: 1rem;
+// $font-family-base: 'Lato', sans-serif;
+
+// $border-radius:               0;
+// $border-radius-lg:            0;
+// $border-radius-sm:            0;
+
+// $btn-box-shadow: none;
+// $btn-focus-box-shadow: none;
+// $btn-active-box-shadow: none;
+// $input-box-shadow: none;
+// $input-focus-box-shadow: none;
+// $input-btn-focus-box-shadow: none;
+
+// $input-focus-border-color:    $blue-600;
+
+// $input-btn-focus-width:       .1rem;
+// $input-btn-focus-color:       rgba($input-focus-border-color, .50);
+
+// $card-border-width: 0;
+
+// $h1-font-size:                $font-size-base * 2.25   ;
+// $h2-font-size:                $font-size-base * 2      ;
+// $h3-font-size:                $font-size-base * 1.75   ;
+// $h4-font-size:                $font-size-base * 1.5    ;
+// $h5-font-size:                $font-size-base * 1.25   ;
+// $h6-font-size:                $font-size-base          ;
+
+// $link-color:                              $primary;
+// $link-decoration:                         none;
+// $link-hover-color:                        $tertiary;
+// $link-hover-decoration:                   none;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
