@@ -65,21 +65,29 @@
 .bubble-portrait img {
   width: 50vw;
 
-  // @include media-breakpoint-up(sm) {
-  //   width: 85vw;
-  // }
+  @include media-breakpoint-down(sm) {
+    width: 85vw;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 70vw;
+  }
 }
 
 .work-thumbnail {
   aspect-ratio: 1/1;
-}
-
-.work-thumbnail img {
   width: 25vw;
+  background: center / cover url("/assets/images/portrait1.png");
 }
 
-// @media screen and (min-width: 569px) and (max-width: 768px) {
-//   .bubble-portrait img {
-//     width: 70vw;
-//   }
-// }
+.fancy-border1 {
+  border-radius: 30% 70% 65% 35% / 59% 45% 55% 41%;
+}
+
+.fancy-border2 {
+  border-radius: 63% 37% 31% 69% / 61% 58% 42% 39%;
+}
+
+.fancy-border3 {
+  border-radius: 60% 40% 43% 57% / 41% 42% 58% 59%;
+}
