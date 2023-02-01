@@ -35,8 +35,8 @@
   width: fit-content;
 }
 
-.n2,
-.n4 {
+.text2,
+.text4 {
   margin-left: auto;
 }
 
@@ -60,7 +60,16 @@
 }
 
 .bubble-portrait img {
-  width: 600px;
+  width: 50vw;
+}
+
+.work-thumbnail {
+  aspect-ratio: 1/1;
+}
+
+.work-thumbnail img {
+  width: 25vw;
+  
 }
 
 @media screen and (max-width: 568px) {
