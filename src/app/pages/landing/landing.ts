@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 
 @Component({
     templateUrl: './landing.html',
-    styleUrls: ['./landing.css']
+    styleUrls: ['./landing.scss']
 })
 export class LandingPage {
 }
