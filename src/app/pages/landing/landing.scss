@@ -2,7 +2,7 @@
 @import 'mixins';
 
 .logo-section {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,48 +29,46 @@
 }
 
 .presentation-section p {
-  max-width: 20vw;
   margin: 0;
   font-size: 1.2em;
+  max-width: 70vw;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 25vw;
+  }
 }
 
-.presentation-section .presentation {
+.presentation-text {
   width: fit-content;
 }
 
-.text2,
-.text4 {
-  margin-left: auto;
-}
+// .textured-gradient img {
+//   width: 100%;
+//   height: auto;
+// }
 
-.textured-gradient img {
-  width: 100%;
-  height: auto;
-}
+// .gradient-up {
+//   transform: translateY(2px);
+// }
 
-.gradient-up {
-  transform: translateY(2px);
-}
-
-.gradient-down {
-  transform: translateY(-2px) rotate(0.5turn);
-}
-
-.bubble-portrait {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
+// .gradient-down {
+//   transform: translateY(-2px) rotate(0.5turn);
+// }
 
 .bubble-portrait img {
-  width: 50vw;
+  width: 85vw;
+  max-width: 800px;
 
-  @include media-breakpoint-down(sm) {
-    width: 85vw;
+  @include media-breakpoint-up(sm) {
+    width: 70vw;
   }
 
-  @include media-breakpoint-down(md) {
-    width: 70vw;
+  @include media-breakpoint-up(md) {
+    width: 50vw;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    width: 40vw;
   }
 }
 

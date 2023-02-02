@@ -1,0 +1,54 @@
+.header-logo {
+    cursor: pointer;
+  }
+  
+  .header-logo img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .menu-item {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 4em;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    position: relative;
+  }
+  
+  .menu-item:hover {
+    color: #62bda8;
+  }
+  
+  .menu-item svg {
+    position: absolute;
+    left: -20%;
+    top: -44%;
+    width: 140%;
+    height: 160%;
+    opacity: 0;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
+  }
+  
+  .menu-item.active {
+    color: #62bda8;
+  }
+  
+  .menu-item.active svg {
+    opacity: 1;
+    stroke-dashoffset: 0;
+    transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  footer {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .footer {
+    padding: 20px;
+  }
