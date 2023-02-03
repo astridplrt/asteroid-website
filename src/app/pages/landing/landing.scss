@@ -25,7 +25,7 @@
   min-height: 100vh;
   height: 1px; /* override the min-height to set 100% height to the child div */
   background: $secondary;
-  color: rgb(243, 242, 241);
+  color: $white;
 }
 
 .presentation-text {
@@ -88,4 +88,8 @@
 
 .fancy-border3 {
   border-radius: 60% 40% 43% 57% / 41% 42% 58% 59%;
+}
+
+custom-button {
+  width: fit-content;
 }

@@ -1,0 +1,9 @@
+@import 'variables';
+
+.button {
+    // background-color: $tertiary;
+    border: $tertiary 12px solid;
+    width: fit-content;
+    border-radius: 80px;
+    font-weight: bold;
+}

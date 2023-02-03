@@ -7,6 +7,7 @@ import { LandingPage } from "./pages/landing/landing";
 import { PortfolioPage } from './pages/portfolio/portfolio';
 import { AboutPage } from './pages/about/about';
 import { ContactPage } from './pages/contact/contact';
+import { Components } from './components/module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContactPage } from './pages/contact/contact';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Components
   ],
   providers: [],
   bootstrap: [AppComponent]
