@@ -1,16 +1,17 @@
 // // @import "../../node_modules/bootstrap/scss/variables";
 
-// $primary: #1A2B44;
-// $secondary: white;
-// $tertiary: #FBC04D;
-// $quaternary: $grey-500;
+$primary: #62bda8;
+$secondary: #b84f54;
+$tertiary: #f2b79e;
+$quaternary:  #ffd151;
+$fifth:  #34334b;
 
-// $theme-colors: (
-//   (
-//     "tertiary":  $tertiary,
-//     "quaternary":  $quaternary
-//   )
-// );
+$theme-colors: (
+  (
+    "tertiary":  $tertiary,
+    "quaternary":  $quaternary
+  )
+);
 
 // $border-color: #eee;
 // $shadow-color: rgba(0, 0, 0, 0.075);

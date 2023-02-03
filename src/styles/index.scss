@@ -1,5 +1,11 @@
-@import './variables';
-@import './bootstrap';
+@import "./variables";
+@import "./bootstrap";
+
+@font-face {
+  font-family: "WigglyCurves";
+  font-weight: 400;
+  src: url(/assets/fonts/WigglyCurves.ttf) format("truetype");
+}
 
 @font-face {
   font-family: "Quicksand";
@@ -59,4 +65,9 @@ p {
   width: 85vw;
   max-width: 90rem;
   margin: auto;
+}
+
+h1 {
+  font-family: "WigglyCurves", Copperplate, fantasy;
+  letter-spacing: 1px;
 }

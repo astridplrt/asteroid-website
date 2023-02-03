@@ -24,36 +24,36 @@
 .presentation-section {
   min-height: 100vh;
   height: 1px; /* override the min-height to set 100% height to the child div */
-  background: #b84f54;
+  background: $secondary;
   color: rgb(243, 242, 241);
-}
-
-.presentation-section p {
-  margin: 0;
-  font-size: 1.2em;
-  max-width: 70vw;
-
-  @include media-breakpoint-up(lg) {
-    max-width: 25vw;
-  }
 }
 
 .presentation-text {
   width: fit-content;
+
+  & p {
+    margin: 0;
+    max-width: 100%;
+  
+    @include media-breakpoint-up(lg) {
+      font-size: 1.2em;
+    }
+  }
 }
 
-// .textured-gradient img {
-//   width: 100%;
-//   height: auto;
-// }
+.textured-gradient img {
+  min-width: 100%;
+  width: 1800px;
+  height: auto;
+}
 
-// .gradient-up {
-//   transform: translateY(2px);
-// }
+.gradient-up {
+  transform: translateY(2px);
+}
 
-// .gradient-down {
-//   transform: translateY(-2px) rotate(0.5turn);
-// }
+.gradient-down {
+  transform: translateY(-2px) rotate(0.5turn);
+}
 
 .bubble-portrait img {
   width: 85vw;
