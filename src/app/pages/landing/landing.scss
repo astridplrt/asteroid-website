@@ -21,75 +21,10 @@
   font-weight: 400;
 }
 
-.presentation-section {
-  min-height: 100vh;
-  height: 1px; /* override the min-height to set 100% height to the child div */
-  background: $secondary;
-  color: $white;
-}
-
-.presentation-text {
-  width: fit-content;
-
-  & p {
-    margin: 0;
-    max-width: 100%;
-  
-    @include media-breakpoint-up(lg) {
-      font-size: 1.2em;
-    }
-  }
-}
-
-.textured-gradient img {
-  min-width: 100%;
-  width: 1800px;
-  height: auto;
-}
-
-.gradient-up {
-  transform: translateY(2px);
-}
-
-.gradient-down {
-  transform: translateY(-2px) rotate(0.5turn);
-}
-
-.bubble-portrait img {
-  width: 85vw;
-  max-width: 800px;
-
-  @include media-breakpoint-up(sm) {
-    width: 70vw;
-  }
-
-  @include media-breakpoint-up(md) {
-    width: 50vw;
-  }
-
-  @include media-breakpoint-up(xxl) {
-    width: 40vw;
-  }
-}
-
-.work-thumbnail {
-  aspect-ratio: 1/1;
-  width: 25vw;
-  background: center / cover url("/assets/images/portrait1.png");
-}
-
-.fancy-border1 {
-  border-radius: 30% 70% 65% 35% / 59% 45% 55% 41%;
-}
-
-.fancy-border2 {
-  border-radius: 63% 37% 31% 69% / 61% 58% 42% 39%;
-}
-
-.fancy-border3 {
-  border-radius: 60% 40% 43% 57% / 41% 42% 58% 59%;
-}
-
 custom-button {
   width: fit-content;
+}
+
+img {
+  width: 80%;
 }

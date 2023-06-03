@@ -68,20 +68,6 @@ p {
   margin: auto;
 }
 
-.short-frame {
-  width: 85vw;
-  max-width: 90rem;
-  margin: auto;
-
-  @include media-breakpoint-up(md) {
-    width: 65vw;
-  }
-
-  @include media-breakpoint-up(xl) {
-    width: 50vw;
-  }
-}
-
 h1 {
   font-family: "WigglyCurves", Copperplate, fantasy;
   letter-spacing: 1px;

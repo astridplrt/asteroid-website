@@ -1,9 +1,10 @@
 @import 'variables';
 
 .button {
-    // background-color: $tertiary;
-    border: $tertiary 12px solid;
+    color: $primary;
     width: fit-content;
-    border-radius: 80px;
+    font-size: 1.4em;
     font-weight: bold;
+    transition: all ease-in-out 200ms;
+    cursor: pointer;
 }
