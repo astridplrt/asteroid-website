@@ -48,12 +48,6 @@ app-root {
   min-height: 100vh;
 }
 
-.screen {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 p {
   margin: 0;
 }
@@ -63,9 +57,14 @@ p {
 }
 
 .frame {
-  width: 85vw;
+  width: 75vw;
   max-width: 90rem;
   margin: auto;
+}
+
+.blank-space {
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 h1 {

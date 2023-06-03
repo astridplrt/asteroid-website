@@ -1,11 +1,20 @@
 @import 'variables';
 @import 'mixins';
 
-.logo-section {
+.hero-section {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.hero-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("/assets/images/portrait1.png");
+  z-index: -1;
+  opacity: 0.2;
 }
 
 .big-logo {
@@ -14,11 +23,21 @@
 }
 
 .head-line {
-  color: #62bda8;
-  margin-top: 40px;
+  // color: #62bda8;
   text-align: center;
-  font-size: 2.4em;
-  font-weight: 400;
+  font-size: 2.1em;
+}
+
+.sub-line {
+  // color: #62bda8;
+  text-align: center;
+  font-size: 2.8em;
+  font-weight: 700;
+}
+
+.blue {
+  color: #62bda8;
+  font-size: 1.4em;
 }
 
 custom-button {
@@ -27,4 +46,55 @@ custom-button {
 
 img {
   width: 80%;
+}
+
+.prestations {
+  height: 450px;
+}
+
+.prestation-card {
+  position: relative; // to position the corner-borders
+  height: 300px;
+  width: 42%;
+  border-radius: 40px;
+  border: 0.5px solid #62bda8;
+}
+
+.corner-borders {
+  height: 50px;
+  width: 50px;
+  border-color: #62bda8; 
+  border-style: solid;
+}
+
+.top-left {
+  position: absolute;
+  top: -26px;
+  left: -26px;
+  border-radius: 50px 0 0 0;
+  border-width: 9px 0 0 9px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: -26px;
+  right: -26px;
+  border-radius: 0 0 50px 0;
+  border-width: 0 9px 9px 0;
+}
+
+.top-right {
+  position: absolute;
+  top: -26px;
+  right: -26px;
+  border-radius: 0 50px 0 0;
+  border-width: 9px 9px 0 0;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: -26px;
+  left: -26px;
+  border-radius: 0 0 0 50px;
+  border-width: 0 0 9px 9px;
 }
