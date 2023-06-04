@@ -2,20 +2,10 @@
 @import 'mixins';
 
 .hero-section {
-  height: 100vh;
-  transform: translateY(50px); // half the height of the header
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.hero-background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url("/assets/images/portrait1.png");
-  z-index: -1;
-  opacity: 0.2;
 }
 
 .big-logo {

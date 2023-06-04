@@ -1,9 +1,5 @@
 @import 'variables';
 
-header {
-  z-index: 10; // fix because of "transform: translate(Y)" for the hero-section
-}
-
 .header-logo {
     cursor: pointer;
   }
@@ -28,27 +24,27 @@ header {
     color: $primary;
   }
   
-  .menu-item svg {
-    position: absolute;
-    left: -20%;
-    top: -44%;
-    width: 140%;
-    height: 160%;
-    opacity: 0;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1500;
-    transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
-  }
+  // .menu-item svg {
+  //   position: absolute;
+  //   left: -20%;
+  //   top: -44%;
+  //   width: 140%;
+  //   height: 160%;
+  //   opacity: 0;
+  //   stroke-dasharray: 1500;
+  //   stroke-dashoffset: 1500;
+  //   transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
+  // }
   
   .menu-item.active {
     color: $primary;
   }
   
-  .menu-item.active svg {
-    opacity: 1;
-    stroke-dashoffset: 0;
-    transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  }
+  // .menu-item.active svg {
+  //   opacity: 1;
+  //   stroke-dashoffset: 0;
+  //   transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  // }
   
   footer {
     text-align: center;

@@ -1,4 +1,4 @@
-<header class="position-absolute w-100 d-flex justify-content-between align-items-center px-5 py-4">
+<header class="w-100 d-flex justify-content-between align-items-center px-5 py-4">
   <div class="header-logo" routerLink="landing">
     <img
       src="assets\images\symbol-1-color-green.png"
@@ -6,17 +6,17 @@
     />
   </div>
   <div class="menu d-flex">
-    <div class="menu-item" routerLink="about" routerLinkActive="active">
+    <div class="menu-item" routerLink="/about" routerLinkActive="active">
       à propos
-      <ng-container *ngTemplateOutlet="handdrawborder"></ng-container>
+      <!-- <ng-container *ngTemplateOutlet="handdrawborder"></ng-container> -->
     </div>
-    <div class="menu-item" routerLink="portfolio" routerLinkActive="active">
+    <div class="menu-item" routerLink="/portfolio" routerLinkActive="active">
       portfolio
-      <ng-container *ngTemplateOutlet="handdrawborder"></ng-container>
+      <!-- <ng-container *ngTemplateOutlet="handdrawborder"></ng-container> -->
     </div>
-    <div class="menu-item" routerLink="contact" routerLinkActive="active">
+    <div class="menu-item" routerLink="/contact" routerLinkActive="active">
       contact
-      <ng-container *ngTemplateOutlet="handdrawborder"></ng-container>
+      <!-- <ng-container *ngTemplateOutlet="handdrawborder"></ng-container> -->
     </div>
   </div>
 </header>
@@ -28,7 +28,7 @@
   <div class="footer">Here's a footer</div>
 </footer>
 
-<ng-template #handdrawborder>
+<!-- <ng-template #handdrawborder>
   <svg
     width="686"
     height="187"
@@ -43,4 +43,4 @@
       stroke-linecap="round"
     />
   </svg>
-</ng-template>
+</ng-template> -->
