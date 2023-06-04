@@ -24,13 +24,11 @@
 }
 
 .head-line {
-  // color: $primary;
   text-align: center;
   font-size: 2.1em;
 }
 
 .sub-line {
-  // color: $primary;
   text-align: center;
   font-size: 2.8em;
   font-weight: 700;
@@ -54,8 +52,15 @@
   width: 60px;
 }
 
-custom-button {
+bracket-button {
   width: fit-content;
+
+  &:hover {
+    .yellow {
+      color: $secondary;
+      transition: all ease-in-out 200ms;
+  }
+  }
 }
 
 img {

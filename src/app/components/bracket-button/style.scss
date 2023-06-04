@@ -1,0 +1,48 @@
+@import 'variables';
+
+.button {
+    color: $primary;
+    width: fit-content;
+    font-size: 1.4em;
+    font-weight: bold;
+    transition: all ease-in-out 200ms;
+    cursor: pointer;
+}
+
+.half-circle {
+    height: 34px;
+    width: 17px;
+    border-color: $primary; 
+    border-style: solid;
+    transition: all ease-in-out 200ms;
+}
+
+.left {
+  border-radius: 34px 0 0 34px;
+  border-width: 6px 0 6px 6px;
+}
+
+.right {
+  border-radius: 0 34px 34px 0;
+  border-width: 6px 6px 6px 0;
+}
+
+.button:hover {
+    .left {
+       transform: translateX(-20px);
+    }
+    
+    .right {
+       transform: translateX(20px);
+    }
+   }
+
+.button:active {
+    .left {
+       transform: translateX(0px);
+    }
+    
+    .right {
+       transform: translateX(0px);
+    }
+   }

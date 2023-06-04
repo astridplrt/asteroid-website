@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { customButtonComponent } from './custom-button';
+import { bracketButtonComponent } from './bracket-button';
 
 @NgModule({
     imports: [
       CommonModule
     ],
     declarations: [
-        customButtonComponent
+        bracketButtonComponent
     ],
     exports: [
-        customButtonComponent
+        bracketButtonComponent
     ]
   })
   export class Components {}
