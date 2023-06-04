@@ -1,3 +1,9 @@
+@import 'variables';
+
+header {
+  z-index: 10; // fix because of "transform: translate(Y)" for the hero-section
+}
+
 .header-logo {
     cursor: pointer;
   }
@@ -19,7 +25,7 @@
   }
   
   .menu-item:hover {
-    color: #62bda8;
+    color: $primary;
   }
   
   .menu-item svg {
@@ -35,7 +41,7 @@
   }
   
   .menu-item.active {
-    color: #62bda8;
+    color: $primary;
   }
   
   .menu-item.active svg {

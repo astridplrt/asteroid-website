@@ -63,11 +63,23 @@ p {
 }
 
 .blank-space {
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 240px;
+  margin-bottom: 240px;
 }
 
 h1 {
   font-family: "WigglyCurves", Copperplate, fantasy;
   letter-spacing: 1px;
+}
+
+.text-big {
+  font-size: 1.4em;
+}
+
+.text-blue {
+  color: $primary;
+}
+
+.text-yellow {
+  color: $secondary;
 }

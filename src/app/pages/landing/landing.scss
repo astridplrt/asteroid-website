@@ -3,6 +3,7 @@
 
 .hero-section {
   height: 100vh;
+  transform: translateY(50px); // half the height of the header
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,21 +24,34 @@
 }
 
 .head-line {
-  // color: #62bda8;
+  // color: $primary;
   text-align: center;
   font-size: 2.1em;
 }
 
 .sub-line {
-  // color: #62bda8;
+  // color: $primary;
   text-align: center;
   font-size: 2.8em;
   font-weight: 700;
 }
 
-.blue {
-  color: #62bda8;
-  font-size: 1.4em;
+.line {
+  height: 0.5px;
+  width: 100px;
+  border: $secondary 0.5px solid;
+}
+
+.dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  border: $secondary 2px solid;
+}
+
+.big-dot {
+  height: 60px;
+  width: 60px;
 }
 
 custom-button {
@@ -57,13 +71,13 @@ img {
   height: 300px;
   width: 42%;
   border-radius: 40px;
-  border: 0.5px solid #62bda8;
+  border: 0.5px solid $primary;
 }
 
 .corner-borders {
   height: 50px;
   width: 50px;
-  border-color: #62bda8; 
+  border-color: $primary; 
   border-style: solid;
 }
 
