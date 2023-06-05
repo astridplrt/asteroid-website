@@ -1,42 +1,70 @@
-<div class="hero-section">
-  <img
-    class="big-logo mx-auto d-block"
-    src="assets\images\logo-color-green.png"
-    alt="logo-asteroid-website"
-  />
-  <p class="head-line mt-4 mb-5">Designer graphique freelance en Bretagne</p>
-  <div class="d-flex align-items-center mx-auto my-5">
-    <div class="dot"></div>
-    <div class="line"></div>
-    <div class="dot big-dot d-flex justify-content-center align-items-center">
+<div class="frame">
+  <div class="hero-section">
+    <img
+      class="big-logo mx-auto d-block"
+      src="assets\images\logo-color-green.png"
+      alt="logo-asteroid-website"
+    />
+    <p class="head-line mt-4 mb-5">Designer graphique freelance en Bretagne</p>
+    <div class="d-flex align-items-center mx-auto my-5">
+      <div class="dot"></div>
+      <div class="line"></div>
+      <div class="dot big-dot d-flex justify-content-center align-items-center">
+        <div class="dot"></div>
+      </div>
+      <div class="line"></div>
       <div class="dot"></div>
     </div>
-    <div class="line"></div>
-    <div class="dot"></div>
+    <p class="sub-line mt-5">
+      Print <span class="text-blue text-big">&</span> Digital
+    </p>
   </div>
-  <p class="sub-line mt-5">Print <span class="text-blue text-big">&</span> Digital</p>
-</div>
 
-<div class="frame pt-5">
-  <img src="\assets\images\portrait1.png" alt="" class="d-block mx-auto" />
-  <bracket-button class="d-block mx-auto mt-5 pt-4" routerLink="/portfolio" routerLinkActive="active">
-    Déc<span class="yellow">o</span>uvrez le p<span class="yellow">o</span>rtfol<span class="yellow">i</span>o
-  </bracket-button>
-</div>
-
-<div class="frame blank-space">
-  <div class="d-flex justify-content-between prestations pb-5">
-    <div class="prestation-card">
-      <div class="corner-borders top-left"></div>
-      <div class="corner-borders bottom-right"></div>
-    </div>
-    <div class="prestation-card align-self-end">
-      <div class="corner-borders top-right"></div>
-      <div class="corner-borders bottom-left"></div>
-    </div>
+  <div class="py-5">
+    <img src="\assets\images\portrait1.png" alt="" class="d-block mx-auto" />
+    <bracket-button
+      class="d-block mx-auto mt-5"
+      routerLink="/portfolio"
+      routerLinkActive="active"
+    >
+      Déc<span class="yellow">o</span>uvrez le p<span class="yellow">o</span
+      >rtfol<span class="yellow">i</span>o
+    </bracket-button>
   </div>
-  <h5 class="mt-5 pt-5 text-center fw-bold">Vous avez un projet ? Laissez moi un mot :</h5>
-  <bracket-button class="d-block mx-auto mt-4 pt-3"  routerLink="/contact" routerLinkActive="active">
-    C<span class="yellow">o</span>ntact
-  </bracket-button>
+
+  <div class="py-5 my-5">
+    <div class="prestations-section d-md-flex justify-content-between pb-5">
+      <prestations-card
+        class="d-block mb-5 mb-md-0"
+        TLdisplay="block"
+        BRdisplay="block"
+        title="Design graphique"
+        presta1="Identité visuelle"
+        presta2="Supports imprimés"
+        presta3="Illustration"
+        presta4="Packaging"
+        presta5="Signalétique"
+      ></prestations-card>
+      <prestations-card
+        class="d-block align-self-end"
+        BLdisplay="block"
+        TRdisplay="block"
+        title="Digital"
+        presta1="Web design"
+        presta2="UI/UX"
+        presta3="Développement web"
+        presta4="Motion"
+      ></prestations-card>
+    </div>
+    <h5 class="mt-5 pt-5 text-center fw-bold">
+      Vous avez un projet ? Laissez-moi un mot :
+    </h5>
+    <bracket-button
+      class="d-block mx-auto mt-4 pt-3"
+      routerLink="/contact"
+      routerLinkActive="active"
+    >
+      C<span class="yellow">o</span>ntact
+    </bracket-button>
+  </div>
 </div>

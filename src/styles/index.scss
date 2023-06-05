@@ -2,9 +2,9 @@
 @import "./bootstrap";
 
 @font-face {
-  font-family: "WigglyCurves";
+  font-family: "worldOfWater";
   font-weight: 400;
-  src: url(/assets/fonts/WigglyCurves.ttf) format("truetype");
+  src: url(/assets/fonts/world-of-water.otf) format("opentype");
 }
 
 @font-face {
@@ -44,12 +44,9 @@ body {
   background-color: rgb(254, 253, 253);
 }
 
-app-root {
-  min-height: 100vh;
-}
-
 p {
   margin: 0;
+  font-size: 1.1em;
 }
 
 .page-content {
@@ -68,8 +65,14 @@ p {
 }
 
 h1 {
-  font-family: "WigglyCurves", Copperplate, fantasy;
-  letter-spacing: 1px;
+  font-family: "worldOfWater", Copperplate, fantasy;
+  font-size: 6em;
+  color: $primary;
+}
+
+h2 {
+    font-family: "worldOfWater", Copperplate, fantasy;
+    color: $primary;
 }
 
 .text-big {

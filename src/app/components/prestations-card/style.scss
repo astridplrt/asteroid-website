@@ -1,0 +1,55 @@
+@import "./variables";
+
+.box {
+  position: relative; // to position the corner-borders
+  padding: 20px;
+  height: 300px;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 40px;
+}
+
+.line {
+  height: 1px;
+  width: 40px;
+  border: 2px solid $secondary;
+}
+
+.corner-borders {
+  height: 30px;
+  width: 30px;
+  border-color: $secondary;
+  border-style: solid;
+  display: none;
+}
+
+.top-left {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  border-radius: 26px 0 0 0;
+  border-width: 4px 0 0 4px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  border-radius: 0 0 26px 0;
+  border-width: 0 4px 4px 0;
+}
+
+.top-right {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-radius: 0 26px 0 0;
+  border-width: 4px 4px 0 0;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  border-radius: 0 0 0 26px;
+  border-width: 0 0 4px 4px;
+}

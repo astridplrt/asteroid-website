@@ -1,7 +1,8 @@
 import { Component } from "@angular/core";
 
 @Component ({
-    templateUrl: './about.html'
+    templateUrl: './about.html',
+    styleUrls: ['./about.scss']
 })
 export class AboutPage {
 }
