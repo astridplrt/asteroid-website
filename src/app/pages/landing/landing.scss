@@ -42,17 +42,6 @@
   width: 60px;
 }
 
-bracket-button {
-  width: fit-content;
-
-  &:hover {
-    .yellow {
-      color: $secondary;
-      transition: all ease-in-out 200ms;
-  }
-  }
-}
-
 img {
   width: 80%;
 }
@@ -63,7 +52,7 @@ img {
   }
 }
 
-prestations-card {
+resume-prestations-card {
   width: 100%;
   height: fit-content;
   

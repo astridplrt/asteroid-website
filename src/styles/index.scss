@@ -86,3 +86,14 @@ h2 {
 .text-yellow {
   color: $secondary;
 }
+
+bracket-button {
+  width: fit-content;
+
+  &:hover {
+    .yellow-detail {
+      color: $secondary;
+      transition: all ease-in-out 200ms;
+  }
+  }
+}

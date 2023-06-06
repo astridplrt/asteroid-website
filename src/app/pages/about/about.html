@@ -9,8 +9,14 @@
       Je suis Astrid Polart, graphiste, illustratrice et web-designer
     </h4>
   </div>
-  <div class="d-xl-flex flex-row-reverse justify-content-between align-items-center mt-5 pt-5">
-    <img src="\assets\images\portrait1.png" alt="" class="portrait d-block mx-auto align-self-stretch mb-5 mb-xl-0"/>
+  <div
+    class="d-xl-flex flex-row-reverse justify-content-between align-items-center mt-5 pt-5"
+  >
+    <img
+      src="\assets\images\portrait1.png"
+      alt=""
+      class="portrait d-block mx-auto align-self-stretch mb-5 mb-xl-0"
+    />
     <div class="presentation-text">
       <p class="mb-3">
         Après une prépa en arts appliqués et un diplôme de Concepteur - Designer
@@ -46,15 +52,59 @@
       supports imprimés, illustration, communication digitale ... Voici un petit
       aperçu des prestations que je peux fournir, de façon non exhaustive :
     </p>
-    <div class="d-flex justify-content-between pt-5">
-      <div class="presta-card">
-        <h4 class="text-center">Design graphique</h4>
-        <p></p>
-      </div>
-      <div class="presta-card">
-        <h4 class="text-center">Digital</h4>
-        <p></p>
-      </div>
+    <div class="row pt-5">
+      <prestations-card
+        class="col"
+        title="Design graphique"
+        [prestas]="[
+          {
+            name:'Identité visuelle', 
+            text:'Logotype, charte graphique, naming, palette de couleur, choix typographiques, papeterie, iconographie ...'
+          },
+          {
+            name:'Print', 
+            text:'Affiche, flyer, brochure, carte de visite, catalogue, roll-up, devanture, cover ...'
+          },
+          {
+            name:'Illustration', 
+            text:'Supports imprimés, contenu web, édition ...'
+          },
+          {
+            name:'Signalétique', 
+            text:'Conception marquage intérieur et extérieur, totem, design d\'information ... Possibilité de mise en relation pour la pose'
+          },
+          {
+            name:'Packaging', 
+            text:''
+          }]"
+      ></prestations-card>
+      <prestations-card
+        class="col"
+        title="Digital"
+        [prestas]="[
+          {
+            name:'Webdesign, UI/UX', 
+            text:'Design d\'interface, conception de la navigation, ergonomie, responsive design ...'
+          },
+          {
+            name:'Développement web', 
+            text:'Site vitrine, one page, site e-commerce, hébergement, maintenance ...'
+          },
+          {
+            name:'Motion', 
+            text:'Animation de logo, d\'infographie, d\'illustration, vidéo promotionnelle, storyboard ...'
+          }]"
+      ></prestations-card>
     </div>
+    <h5 class="mt-5 pt-5 text-center fw-bold">
+      Vous avez un projet ou vous souhaitez en savoir plus ? N'hésitez pas à me laisser un message :
+    </h5>
+    <bracket-button
+      class="d-block mx-auto mt-4 pt-3"
+      routerLink="/contact"
+      routerLinkActive="active"
+    >
+      C<span class="yellow-detail">o</span>ntact
+    </bracket-button>
   </div>
 </div>
