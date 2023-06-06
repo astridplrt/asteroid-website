@@ -1,12 +1,6 @@
 @import "./variables";
 @import "./mixins";
 
-.variant {
-  font-weight: 700;
-  font-size: 0.68em;
-  text-transform: uppercase;
-}
-
 .portrait {
   object-fit: cover;
   width: 100%;
