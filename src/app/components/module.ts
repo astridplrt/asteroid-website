@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { bracketButtonComponent } from './bracket-button';
 import { prestationsCardComponent } from './prestations-card';
 import { resumePrestationsCardComponent } from './resume-prestations-card';
+import { workCardComponent } from './work-card';
+import { threeDotsComponent } from './three-dots';
 
 @NgModule({
     imports: [
@@ -11,12 +13,16 @@ import { resumePrestationsCardComponent } from './resume-prestations-card';
     declarations: [
         bracketButtonComponent,
         prestationsCardComponent,
-        resumePrestationsCardComponent
+        resumePrestationsCardComponent,
+        workCardComponent,
+        threeDotsComponent
     ],
     exports: [
         bracketButtonComponent,
         prestationsCardComponent,
-        resumePrestationsCardComponent
+        resumePrestationsCardComponent,
+        workCardComponent,
+        threeDotsComponent
     ]
   })
   export class Components {}
