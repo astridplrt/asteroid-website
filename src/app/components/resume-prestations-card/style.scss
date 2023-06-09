@@ -2,9 +2,9 @@
 
 .box {
   position: relative; // to position the corner-borders
-  padding: 20px;
-  height: 300px;
-  border: 1px solid rgb(223, 223, 223);
+  padding: 26px;
+  height: 320px;
+  border: 1px solid $secondary;
   border-radius: 40px;
 }
 
@@ -14,6 +14,7 @@
   border-color: $secondary;
   border-style: solid;
   display: none;
+  box-sizing: border-box;
 }
 
 .top-left {
@@ -21,7 +22,8 @@
   top: 12px;
   left: 12px;
   border-radius: 26px 0 0 0;
-  border-width: 4px 0 0 4px;
+  border-width: 6px 0 0 6px;
+  animation: slideToBottomReverse ease-in-out 200ms forwards;
 }
 
 .bottom-right {
@@ -29,7 +31,8 @@
   bottom: 12px;
   right: 12px;
   border-radius: 0 0 26px 0;
-  border-width: 0 4px 4px 0;
+  border-width: 0 6px 6px 0;
+  animation: slideToTopReverse ease-in-out 200ms forwards;
 }
 
 .top-right {
@@ -37,7 +40,8 @@
   top: 12px;
   right: 12px;
   border-radius: 0 26px 0 0;
-  border-width: 4px 4px 0 0;
+  border-width: 6px 6px 0 0;
+  animation: slideToLeftReverse ease-in-out 200ms forwards;
 }
 
 .bottom-left {
@@ -45,5 +49,416 @@
   bottom: 12px;
   left: 12px;
   border-radius: 0 0 0 26px;
-  border-width: 0 0 4px 4px;
+  border-width: 0 0 6px 6px;
+  animation: slideToRightReverse ease-in-out 200ms forwards;
+}
+
+.box:hover {
+  .top-left {
+    animation: slideToBottom ease-in-out 200ms forwards;
+  }
+
+  .bottom-right {
+    animation: slideToTop ease-in-out 200ms forwards;
+  }
+
+  .top-right {
+    animation: slideToLeft ease-in-out 200ms forwards;
+  }
+
+  .bottom-left {
+    animation: slideToRight ease-in-out 200ms forwards;
+  }
+}
+
+@keyframes slideToBottom {
+  from {
+    height: 30px;
+    border-width: 6px 0 0 6px;
+  }
+
+  20% {
+    top: 12px;
+    height: calc(
+      30px + ((100% - 24px - 60px) / 3)
+    ); // corner height + ((box height - 2*(top space) - 2*(corner height)) / 3)
+    border-radius: 26px 0 0 0;
+    border-width: 0 0 0 6px;
+  }
+
+  40% {
+    top: 42px; // 12px (top space) + 30px (corner height)
+    height: calc(
+      ((100% - 24px - 60px) / 3) * 2
+    ); // ((box height - 2*(top space) - 2*(corner height)) / 3) * 2
+    border-radius: 0;
+  }
+
+  60% {
+    top: calc(
+      42px + ((100% - 24px - 60px) / 3)
+    ); // top at 40% + ((box height - 2*(top space) - 2*(corner height)) / 3)
+    height: calc(
+      ((100% - 24px - 60px) / 3) * 2
+    ); // ((box height - 2*(top space) - 2*(corner height)) / 3) * 2
+    border-radius: 0;
+  }
+
+  80% {
+    top: calc(
+      42px + ((100% - 24px - 60px) / 3) * 2
+    ); // top at 40% + ((box height - 2*(top space) - 2*(corner height)) / 3) * 2
+    height: calc(
+      30px + ((100% - 24px - 60px) / 3)
+    ); // corner height + ((box height - 2*(top space) - 2*(corner height)) / 3)
+    border-radius: 0 0 0 26px;
+    border-width: 0 0 0 6px;
+  }
+
+  to {
+    top: calc(
+      42px + (100% - 24px - 60px)
+    ); // top at 40% + (box height - 2*(top space) - 2*(corner height))
+    height: 30px;
+    border-radius: 0 0 0 26px;
+    border-width: 0 0 6px 6px;
+  }
+}
+
+@keyframes slideToTop {
+  from {
+    height: 30px;
+    border-width: 0 6px 6px 0;
+  }
+
+  20% {
+    bottom: 12px;
+    height: calc(
+      30px + ((100% - 24px - 60px) / 3)
+    ); // corner height + ((box height - 2*(top space) - 2*(corner height)) / 3)
+    border-radius: 0 0 26px 0;
+    border-width: 0 6px 0 0;
+  }
+
+  40% {
+    bottom: 42px; // 12px (bottom space) + 30px (corner height)
+    height: calc(
+      ((100% - 24px - 60px) / 3) * 2
+    ); // ((box height - 2*(bottom space) - 2*(corner height)) / 3) * 2
+    border-radius: 0;
+  }
+
+  60% {
+    bottom: calc(
+      42px + ((100% - 24px - 60px) / 3)
+    ); // bottom at 40% + ((box height - 2*(bottom space) - 2*(corner height)) / 3)
+    height: calc(
+      ((100% - 24px - 60px) / 3) * 2
+    ); // ((box height - 2*(bottom space) - 2*(corner height)) / 3) * 2
+    border-radius: 0;
+  }
+
+  80% {
+    bottom: calc(
+      42px + ((100% - 24px - 60px) / 3) * 2
+    ); // bottom at 40% + ((box height - 2*(bottom space) - 2*(corner height)) / 3) * 2
+    height: calc(
+      30px + ((100% - 24px - 60px) / 3)
+    ); // corner height + ((box height - 2*(bottom space) - 2*(corner height)) / 3)
+    border-radius: 0 26px 0 0;
+    border-width: 0 6px 0 0;
+  }
+
+  to {
+    bottom: calc(
+      42px + (100% - 24px - 60px)
+    ); // bottom at 40% + (box height - 2*(bottom space) - 2*(corner height))
+    height: 30px;
+    border-radius: 0 26px 0 0;
+    border-width: 6px 6px 0 0;
+  }
+}
+
+@keyframes slideToLeft {
+  from {
+    width: 30px;
+    border-width: 6px 6px 0 0;
+  }
+
+  20% {
+    right: 12px;
+    width: 104px;
+    border-radius: 0 26px 0 0;
+    border-width: 6px 0 0 0;
+  }
+
+  40% {
+    right: 48px;
+    width: calc(
+      (100% - 54px) / 2
+    ); // (box width - 2*(top, bottom, left or right space) - corner width) / 2
+    border-radius: 0;
+  }
+
+  60% {
+    right: 124px;
+    width: calc(
+      (100% - 54px) / 2
+    ); // (box width - 2*(top, bottom, left or right space) - corner width) / 2
+    border-radius: 0;
+  }
+
+  80% {
+    right: 198px;
+    width: 104px;
+    border-radius: 26px 0 0 0;
+    border-width: 6px 0 0 0;
+  }
+
+  to {
+    right: calc(100% - 42px); // 12px (right space) + 30px (corner width)
+    width: 30px;
+    border-radius: 26px 0 0 0;
+    border-width: 6px 0 0 6px;
+  }
+}
+
+@keyframes slideToRight {
+  from {
+    width: 30px;
+    border-width: 0 0 6px 6px;
+  }
+
+  20% {
+    left: 12px;
+    width: 104px;
+    border-radius: 0 0 0 26px;
+    border-width: 0 0 6px 0;
+  }
+
+  40% {
+    left: 48px;
+    width: calc(
+      (100% - 54px) / 2
+    ); // (box width - 2*(top, bottom, left or right space) - corner width) / 2
+    border-radius: 0;
+  }
+
+  60% {
+    left: 124px;
+    width: calc(
+      (100% - 54px) / 2
+    ); // (box width - 2*(top, bottom, left or right space) - corner width) / 2
+    border-radius: 0;
+  }
+
+  80% {
+    left: 198px;
+    width: 104px;
+    border-radius: 0 0 26px 0;
+    border-width: 0 0 6px 0;
+  }
+
+  to {
+    left: calc(100% - 42px); // 12px (left space) + 30px (corner width)
+    width: 30px;
+    border-radius: 0 0 26px 0;
+    border-width: 0 6px 6px 0;
+  }
+}
+
+@keyframes slideToBottomReverse {
+  from {
+    top: calc(
+      42px + (100% - 24px - 60px)
+    ); // top at 40% + (box height - 2*(top space) - 2*(corner height))
+    height: 30px;
+    border-radius: 0 0 0 26px;
+    border-width: 0 0 6px 6px;
+  }
+
+  20% {
+    top: calc(
+      42px + ((100% - 24px - 60px) / 3) * 2
+    ); // top at 40% + ((box height - 2*(top space) - 2*(corner height)) / 3) * 2
+    height: calc(
+      30px + ((100% - 24px - 60px) / 3)
+    ); // corner height + ((box height - 2*(top space) - 2*(corner height)) / 3)
+    border-radius: 0 0 0 26px;
+    border-width: 0 0 0 6px;
+  }
+
+  40% {
+    top: calc(
+      42px + ((100% - 24px - 60px) / 3)
+    ); // top at 40% + ((box height - 2*(top space) - 2*(corner height)) / 3)
+    height: calc(
+      ((100% - 24px - 60px) / 3) * 2
+    ); // ((box height - 2*(top space) - 2*(corner height)) / 3) * 2
+    border-radius: 0;
+  }
+
+  80% {
+    top: 12px;
+    height: calc(
+      30px + ((100% - 24px - 60px) / 3)
+    ); // corner height + ((box height - 2*(top space) - 2*(corner height)) / 3)
+    border-radius: 26px 0 0 0;
+    border-width: 0 0 0 6px;
+  }
+
+  60% {
+    top: 42px; // 12px (top space) + 30px (corner height)
+    height: calc(
+      ((100% - 24px - 60px) / 3) * 2
+    ); // ((box height - 2*(top space) - 2*(corner height)) / 3) * 2
+    border-radius: 0;
+  }
+
+  to {
+    height: 30px;
+    border-width: 6px 0 0 6px;
+  }
+}
+
+@keyframes slideToTopReverse {
+  from {
+    bottom: calc(
+      42px + (100% - 24px - 60px)
+    ); // bottom at 40% + (box height - 2*(bottom space) - 2*(corner height))
+    height: 30px;
+    border-radius: 0 26px 0 0;
+    border-width: 6px 6px 0 0;
+  }
+
+  20% {
+    bottom: calc(
+      42px + ((100% - 24px - 60px) / 3) * 2
+    ); // bottom at 40% + ((box height - 2*(bottom space) - 2*(corner height)) / 3) * 2
+    height: calc(
+      30px + ((100% - 24px - 60px) / 3)
+    ); // corner height + ((box height - 2*(bottom space) - 2*(corner height)) / 3)
+    border-radius: 0 26px 0 0;
+    border-width: 0 6px 0 0;
+  }
+
+  40% {
+    bottom: calc(
+      42px + ((100% - 24px - 60px) / 3)
+    ); // bottom at 40% + ((box height - 2*(bottom space) - 2*(corner height)) / 3)
+    height: calc(
+      ((100% - 24px - 60px) / 3) * 2
+    ); // ((box height - 2*(bottom space) - 2*(corner height)) / 3) * 2
+    border-radius: 0;
+  }
+
+  60% {
+    bottom: 42px; // 12px (bottom space) + 30px (corner height)
+    height: calc(
+      ((100% - 24px - 60px) / 3) * 2
+    ); // ((box height - 2*(bottom space) - 2*(corner height)) / 3) * 2
+    border-radius: 0;
+  }
+
+  80% {
+    bottom: 12px;
+    height: calc(
+      30px + ((100% - 24px - 60px) / 3)
+    ); // corner height + ((box height - 2*(top space) - 2*(corner height)) / 3)
+    border-radius: 0 0 26px 0;
+    border-width: 0 6px 0 0;
+  }
+  
+  to {
+    height: 30px;
+    border-width: 0 6px 6px 0;
+  }
+}
+
+@keyframes slideToLeftReverse {
+  from {
+    right: calc(100% - 42px); // 12px (right space) + 30px (corner width)
+    width: 30px;
+    border-radius: 26px 0 0 0;
+    border-width: 6px 0 0 6px;
+  }
+
+  20% {
+    right: 198px;
+    width: 104px;
+    border-radius: 26px 0 0 0;
+    border-width: 6px 0 0 0;
+  }
+
+  40% {
+    right: 124px;
+    width: calc(
+      (100% - 54px) / 2
+    ); // (box width - 2*(top, bottom, left or right space) - corner width) / 2
+    border-radius: 0;
+  }
+
+  60% {
+    right: 48px;
+    width: calc(
+      (100% - 54px) / 2
+    ); // (box width - 2*(top, bottom, left or right space) - corner width) / 2
+    border-radius: 0;
+  }
+
+  80% {
+    right: 12px;
+    width: 104px;
+    border-radius: 0 26px 0 0;
+    border-width: 6px 0 0 0;
+  }
+
+  to {
+    width: 30px;
+    border-width: 6px 6px 0 0;
+  }
+}
+
+@keyframes slideToRightReverse {
+  from {
+    left: calc(100% - 42px); // 12px (left space) + 30px (corner width)
+    width: 30px;
+    border-radius: 0 0 26px 0;
+    border-width: 0 6px 6px 0;
+  }
+
+  20% {
+    left: 198px;
+    width: 104px;
+    border-radius: 0 0 26px 0;
+    border-width: 0 0 6px 0;
+  }
+
+  40% {
+    left: 124px;
+    width: calc(
+      (100% - 54px) / 2
+    ); // (box width - 2*(top, bottom, left or right space) - corner width) / 2
+    border-radius: 0;
+  }
+
+  60% {
+    left: 48px;
+    width: calc(
+      (100% - 54px) / 2
+    ); // (box width - 2*(top, bottom, left or right space) - corner width) / 2
+    border-radius: 0;
+  }
+
+  80% {
+    left: 12px;
+    width: 104px;
+    border-radius: 0 0 0 26px;
+    border-width: 0 0 6px 0;
+  }
+  
+  to {
+    width: 30px;
+    border-width: 0 0 6px 6px;
+  }
 }

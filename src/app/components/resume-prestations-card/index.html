@@ -1,8 +1,8 @@
 <div class="box">
-  <div class="d-flex flex-column h-100">
-    <h2 class="text-center">{{ title }}</h2>
-    <div class="d-flex justify-content-center align-items-center flex-grow-1">
-      <div class="text-center fw-bold d-flex flex-column gap-2">
+  <div class="d-flex flex-column justify-content-between h-100">
+    <h2 class="text-center m-0">{{ title }}</h2>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="text-center fw-bold d-flex flex-column gap-1">
         <p>{{ presta1 }}</p>
         <p>{{ presta2 }}</p>
         <p>{{ presta3 }}</p>
@@ -10,7 +10,9 @@
         <p>{{ presta5 }}</p>
       </div>
     </div>
+    <three-dots color="blue" class="mx-auto pb-2"></three-dots>
   </div>
+  <div class="inbox"></div>
   <div class="d-none d-md-{{ TLdisplay }} corner-borders top-left"></div>
   <div class="d-none d-md-{{ BRdisplay }} corner-borders bottom-right"></div>
   <div class="d-none d-md-{{ TRdisplay }} corner-borders top-right"></div>
