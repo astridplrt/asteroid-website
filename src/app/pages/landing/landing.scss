@@ -2,10 +2,12 @@
 @import 'mixins';
 
 .hero-section {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: center / cover url('../../../assets/images/background-vortex-grain.png');
+  color: white;
 }
 
 .big-logo {
@@ -24,8 +26,8 @@
   font-weight: 700;
 }
 
-img {
-  width: 80%;
+.portfolio-resume a {
+  width: 32%;
 }
 
 .prestations-section {
