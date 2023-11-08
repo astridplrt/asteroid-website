@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class prestationsCardComponent {
   @Input()
-  title!: string;
+  titre!: string;
 
   @Input()
   prestas!: {name: string, text: string}[];

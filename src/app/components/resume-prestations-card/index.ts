@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class resumePrestationsCardComponent {
   @Input()
-  title!: string;
+  titre!: string;
 
   @Input()
   presta1!: string;

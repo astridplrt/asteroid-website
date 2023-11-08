@@ -9,7 +9,7 @@
 }
 
 .big-logo {
-  width: 560px;
+  width: 500px;
   height: auto;
 }
 
@@ -22,24 +22,6 @@
   text-align: center;
   font-size: 2.8em;
   font-weight: 700;
-}
-
-.line {
-  height: 0.5px;
-  width: 100px;
-  border: $secondary 0.5px solid;
-}
-
-.dot {
-  height: 30px;
-  width: 30px;
-  border-radius: 30px;
-  border: $secondary 2px solid;
-}
-
-.big-dot {
-  height: 60px;
-  width: 60px;
 }
 
 img {
