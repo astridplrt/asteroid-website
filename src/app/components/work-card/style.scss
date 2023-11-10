@@ -1,11 +1,11 @@
-img {
-  width: 100%;
-  height: auto;
-}
-
 .box {
   border-radius: 8px;
   overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .box-text {
@@ -21,11 +21,11 @@ img {
 
 .box:hover {
   .box-text {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
   }
 
   img {
-    filter: grayscale(1);
+    filter: blur(2px);
   }
 }
