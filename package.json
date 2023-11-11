@@ -9,6 +9,17 @@
     "test": "ng test"
   },
   "private": true,
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "endOfLine": "lf",
+    "arrowParens": "always",
+    "printWidth": 120,
+    "bracketSameLine": true,
+    "bracketSpacing": true
+  },
   "dependencies": {
     "@angular/animations": "^14.0.0",
     "@angular/common": "^14.0.0",

@@ -4,10 +4,6 @@ header {
   z-index: 10;
 }
 
-header a {
-  color: white;
-}
-
 .header-logo {
   cursor: pointer;
 }
@@ -29,7 +25,7 @@ header a {
 }
 
 .menu-item:hover {
-  color: $secondary;
+  color: $primary;
 }
 
 // .menu-item svg {

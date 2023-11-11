@@ -37,6 +37,10 @@
   src: url(/assets/fonts/Quicksand-Bold.ttf) format("truetype");
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
   min-height: 100vh;
