@@ -14,4 +14,10 @@ export class workCardComponent {
 
   @Input()
   imageLink!: string;
+
+  @Input()
+  width!: string;
+
+  @Input()
+  height!: string;
 }

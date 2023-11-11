@@ -26,8 +26,42 @@
   font-weight: 700;
 }
 
-.portfolio-resume a {
-  width: 32%;
+.slider {
+  width: 100%;
+  height: 580px;
+  overflow: hidden;
+}
+
+.slider-container:hover {
+  .arrows {
+    opacity: 1;
+  }
+}
+
+.arrows {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease-in-out 300ms;
+}
+
+.arrow-left svg,
+.arrow-right svg {
+  stroke: $white !important;
+  filter: drop-shadow(0 0 1px rgb(51, 51, 51));
+}
+
+.slide-item {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slide-item img {
+  width: 100%;
+  height: auto;
 }
 
 .prestations-section {
@@ -39,7 +73,7 @@
 resume-prestations-card {
   width: 100%;
   height: fit-content;
-  
+
   @include media-breakpoint-up(md) {
     width: 42%;
   }
