@@ -7,7 +7,7 @@
 <div class="py-5 frame">
   <div class="slider-container position-relative">
     <div class="arrows position-absolute d-flex justify-content-between align-items-center px-2">
-      <div class="arrow-left">
+      <button class="arrow-left" (click)="slidePrevious()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -17,8 +17,8 @@
           width="40px">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
         </svg>
-      </div>
-      <div class="arrow-right">
+      </button>
+      <button class="arrow-right" (click)="slideNext()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -28,10 +28,13 @@
           width="40px">
           <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
         </svg>
-      </div>
+      </button>
     </div>
-    <div class="slider">
-      <div class="slide-item">
+    <div class="slider d-flex" id="slider">
+      <div class="slide-item" *ngFor="let src of pictures">
+        <img [src]="src" alt="" />
+      </div>
+      <!-- <div class="slide-item">
         <img
           src="https://ik.imagekit.io/ast/carantec%20logo%20mise%20en%20sc%C3%A8ne1.jpg?updatedAt=1699551705880"
           alt="" />
@@ -42,19 +45,19 @@
           alt="" />
       </div>
       <div class="slide-item">
-        <img src="" alt="https://ik.imagekit.io/ast/logo%20m%C3%A9tal.jpg?updatedAt=1699551693444" />
+        <img src="https://ik.imagekit.io/ast/logo%20m%C3%A9tal.jpg?updatedAt=1699551693444" alt="" />
       </div>
       <div class="slide-item">
-        <img src="" alt="https://ik.imagekit.io/ast/old%20door%20in%20the%20forest.jpg?updatedAt=1699718532935" />
+        <img src="https://ik.imagekit.io/ast/old%20door%20in%20the%20forest.jpg?updatedAt=1699718532935" alt="" />
       </div>
       <div class="slide-item">
-        <img src="" alt="https://ik.imagekit.io/ast/volage%20lingerie%20mockup.png?updatedAt=1699718566043" />
+        <img src="https://ik.imagekit.io/ast/volage%20lingerie%20mockup.png?updatedAt=1699718566043" alt="" />
       </div>
       <div class="slide-item">
         <img
           src="https://ik.imagekit.io/ast/carantec%20logo%20mise%20en%20sc%C3%A8ne1.jpg?updatedAt=1699551705880"
           alt="" />
-      </div>
+      </div> -->
     </div>
   </div>
   <bracket-button class="d-block mx-auto mt-5" routerLink="/portfolio" routerLinkActive="active">
