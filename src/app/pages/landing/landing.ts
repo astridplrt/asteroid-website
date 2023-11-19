@@ -39,7 +39,7 @@ export class LandingPage implements AfterViewInit {
   slideNext() {
     this.resetTimer();
     const slider = this.slider.nativeElement;
-    slider.style.transition = 'all ease-in-out 300ms';
+    slider.style.transition = 'all ease-in-out 800ms';
     slider.style.transform = `translateX(calc(-100%/${this.pictures.length} * (${this.picture})))`;
 
     if (this.picture < 5) {
@@ -49,7 +49,7 @@ export class LandingPage implements AfterViewInit {
         slider.style.transition = 'none';
         this.picture = 1;
         slider.style.transform = `translateX(0)`;
-      }, 400);
+      }, 900);
     }
   }
   
@@ -59,15 +59,15 @@ export class LandingPage implements AfterViewInit {
 
     if (this.picture > 1) {
       this.picture--;
-      slider.style.transition = 'all ease-in-out 300ms';
+      slider.style.transition = 'all ease-in-out 800ms';
       slider.style.transform = `translateX(calc(-100%/${this.pictures.length} * (${this.picture} - 1)))`;
     } else {
       this.picture = 6;
       slider.style.transition = 'none';
       slider.style.transform = `translateX(calc(-100%/${this.pictures.length} * (${this.picture} - 1)))`;
+      this.picture--;
       setTimeout(() => {
-        this.picture--;
-        slider.style.transition = 'all ease-in-out 300ms';
+        slider.style.transition = 'all ease-in-out 800ms';
         slider.style.transform = `translateX(calc(-100%/${this.pictures.length} * (${this.picture} - 1)))`;
       }, 50);
     }
