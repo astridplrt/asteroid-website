@@ -1,75 +1,147 @@
-<div class="hero-section">
-  <img class="big-logo mx-auto d-block" src="assets\images\logo-color-white.png" alt="logo-asteroid-website" />
-  <p class="head-line mt-4 mb-5">Designer graphique freelance en Bretagne</p>
-  <p class="sub-line">Print <span class="text-yellow text-big">&</span> Digital</p>
+<div class="hero-section position-relative">
+  <div class="hero">
+    <img class="big-logo mx-auto d-block" src="assets\images\logo-color-white.png" alt="logo-asteroid-website" />
+    <p class="head-line mt-4 mb-5">Designer graphique freelance en Bretagne</p>
+    <p class="sub-line">Print <span class="text-yellow text-big">&</span> Digital</p>
+  </div>
+  <div class="waves bottom-waves position-absolute">
+    <svg
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      preserveAspectRatio="none"
+      viewBox="0 0 1774.5 128.1">
+      <path
+        d="m1774.49,128.12v-43.53c-108.44-21.99-216.89-59.42-325.33-52.34-120.76,7.89-241.53,55.75-362.29,79.41
+        s-241.53,7.89-362.29-23.66C603.82,56.45,483.05,9.12,362.29,1.24S120.76,24.9,60.38,40.67L0,56.45v71.67h1774.49Z" />
+    </svg>
+  </div>
 </div>
 
-<div class="py-5 frame">
-  <div class="slider-container position-relative">
-    <div class="arrows position-absolute d-flex justify-content-between align-items-center px-2">
-      <button class="arrow-left" (click)="slidePrevious()">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          width="40px">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-        </svg>
-      </button>
-      <button class="arrow-right" (click)="slideNext()">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          width="40px">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-        </svg>
-      </button>
+<div class="frame py-5">
+  <div class="presentation-section px-5 mx-5 text-center py-5">
+    <div class="d-flex justify-content-center">
+      <img src="https://ik.imagekit.io/ast/curve-blue.png?updatedAt=1700558221806" style="width: 42px" />
+      <img src="https://ik.imagekit.io/ast/rocket-blue.png?updatedAt=1700558220235" style="width: 30px" class="ms-3" />
     </div>
-    <div class="slider d-flex" #slider>
-      <div class="slide-item" *ngFor="let src of pictures">
-        <img [src]="src" alt="" />
+    <div class="py-4">
+      <p class="fw-bold pb-2">Lorem ipsum dolor sit amet</p>
+      <p>
+        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+    <div class="d-flex justify-content-center">
+      <img src="https://ik.imagekit.io/ast/star-blue.png?updatedAt=1700558220195" style="width: 30px" class="me-2" />
+      <img src="https://ik.imagekit.io/ast/stream-blue.png?updatedAt=1700558221686" style="width: 42px" />
+    </div>
+  </div>
+
+  <div class="portfolio-section py-5">
+    <div class="slider-container position-relative">
+      <div class="arrows position-absolute d-flex justify-content-between align-items-center px-2">
+        <button class="arrow-left" (click)="slidePrevious()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            width="40px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </button>
+        <button class="arrow-right" (click)="slideNext()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            width="40px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="slider d-flex" #slider>
+        <div class="slide-item" *ngFor="let src of pictures">
+          <img [src]="src" alt="" />
+        </div>
+      </div>
+    </div>
+    <bracket-button class="d-block mx-auto mt-5" routerLink="/portfolio" routerLinkActive="active">
+      Déc<span class="yellow-detail">o</span>uvrez le p<span class="yellow-detail">o</span>rtfol<span class="yellow-detail"
+        >i</span
+      >o
+    </bracket-button>
+  </div>
+</div>
+
+<div class="prestations-section position-relative py-5 my-5">
+  <div class="waves top-waves position-absolute">
+    <svg
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      preserveAspectRatio="none"
+      viewBox="0 0 1774.49 128.13">
+      <path
+        d="m1774.49,0v53.79c-57.36,4.94-278.82,65.91-372.92,72.44-92.73,
+        6.53-266.42-3.86-359.55-29.97-94.09-26.11-187.37-67.93-280.91-84.25-94.09-16.32-186.96,
+        3.26-280.91,19.58-92.73,16.32-186.68,29.37-279.55,22.84C133.52,49.78,66.67,35.16,0,23.61V0h1774.49Z" />
+    </svg>
+  </div>
+  <div class="py-5 my-5">
+    <div class="frame d-md-flex justify-content-between py-5">
+      <div class="prestations d-flex flex-column gap-4">
+        <resume-prestations-card
+          class="mb-5 mb-md-0"
+          titre="Design graphique"
+          presta1="Identité visuelle"
+          presta2="Supports imprimés"
+          presta3="Illustration"
+          presta4="Packaging"
+          presta5="Signalétique">
+        </resume-prestations-card>
+        <div class="text-center">
+          <img src="https://ik.imagekit.io/ast/fun-star-white.png?updatedAt=1700558220163" style="width: 32px" />
+        </div>
+      </div>
+      <div class="prestations d-flex flex-column gap-4">
+        <div class="text-center">
+          <img src="https://ik.imagekit.io/ast/rocket-white.png?updatedAt=1700558220143" style="width: 36px" />
+        </div>
+        <resume-prestations-card
+          class="align-self-end"
+          titre="Digital"
+          presta1="Web design"
+          presta2="UI/UX"
+          presta3="Développement web"
+          presta4="Motion"
+          presta5="Réseaux sociaux">
+        </resume-prestations-card>
       </div>
     </div>
   </div>
-  <bracket-button class="d-block mx-auto mt-5" routerLink="/portfolio" routerLinkActive="active">
-    Déc<span class="yellow-detail">o</span>uvrez le p<span class="yellow">o</span>rtfol<span class="yellow-detail"
-      >i</span
-    >o
-  </bracket-button>
+  <div class="waves bottom-waves position-absolute">
+    <svg
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      preserveAspectRatio="none"
+      viewBox="0 0 1774.5 128.1">
+      <path
+        d="m1774.49,128.13c-32.77-13.93-65.52-26.09-98.31-32.31-80.32-15.13-159.59,5.04-239.79,10.09-79.15,
+        5.04-159.35-5.04-238.62-25.22-80.32-20.17-160.17-50.43-239.79-65.56C877.66,0,798.16,0,718.19,25.22c-79.15,
+        25.22-159.47,75.65-239.79,90.78-79.15,15.13-159.12-5.04-238.62-30.26C159.47,60.52,79.85,30.26,39.93,15.13L0,
+        0v128.13h1774.49Z" />
+    </svg>
+  </div>
 </div>
 
-<div class="frame">
-  <div class="py-5 my-5">
-    <div class="prestations-section d-md-flex justify-content-between pb-5">
-      <resume-prestations-card
-        class="d-block mb-5 mb-md-0"
-        TLdisplay="block"
-        BRdisplay="block"
-        titre="Design graphique"
-        presta1="Identité visuelle"
-        presta2="Supports imprimés"
-        presta3="Illustration"
-        presta4="Packaging"
-        presta5="Signalétique"></resume-prestations-card>
-      <resume-prestations-card
-        class="d-block align-self-end"
-        BLdisplay="block"
-        TRdisplay="block"
-        titre="Digital"
-        presta1="Web design"
-        presta2="UI/UX"
-        presta3="Développement web"
-        presta4="Motion"
-        presta5="Réseaux sociaux"></resume-prestations-card>
-    </div>
-    <h5 class="mt-5 pt-5 text-center fw-bold">Vous avez un projet ? Laissez-moi un mot :</h5>
-    <bracket-button class="d-block mx-auto mt-4 pt-3" routerLink="/contact" routerLinkActive="active">
-      C<span class="yellow-detail">o</span>ntact
-    </bracket-button>
-  </div>
+<div class="contact-section py-5">
+  <h5 class="text-center fw-bold">Vous avez un projet ? Laissez-moi un mot :</h5>
+  <bracket-button class="d-block mx-auto mt-4 pt-3" routerLink="/contact" routerLinkActive="active">
+    C<span class="yellow-detail">o</span>ntact
+  </bracket-button>
 </div>

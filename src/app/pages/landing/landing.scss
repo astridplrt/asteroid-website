@@ -2,12 +2,36 @@
 @import 'mixins';
 
 .hero-section {
+  height: calc(100vh + 80px); // screen height + waves svg height
+  background: center / cover url('../../../assets/images/background-vortex-grain.png');
+}
+
+.hero {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: center / cover url('../../../assets/images/background-vortex-grain.png');
-  color: white;
+  color: $white;
+}
+
+.waves {
+  width: 100%;
+  overflow: hidden;
+}
+
+.top-waves {
+  top: -1px;
+}
+
+.bottom-waves {
+  bottom: -1px;
+}
+
+.waves svg {
+  display: block;
+  height: 80px;
+  width: 100%;
+  fill: $white;
 }
 
 .big-logo {
@@ -24,6 +48,10 @@
   text-align: center;
   font-size: 2.8em;
   font-weight: 700;
+}
+
+.presentation-section img {
+  object-fit: contain;
 }
 
 .slider-container {
@@ -75,16 +103,13 @@ button {
 }
 
 .prestations-section {
-  @include media-breakpoint-up(md) {
-    height: 500px;
-  }
+  background-color: $primary;
+}
+
+.prestations {
+    width: 42%;
 }
 
 resume-prestations-card {
   width: 100%;
-  height: fit-content;
-
-  @include media-breakpoint-up(md) {
-    width: 42%;
-  }
 }
