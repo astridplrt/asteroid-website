@@ -72,9 +72,10 @@
 }
 
 .slide-item img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 .slider-container:hover {
@@ -112,4 +113,8 @@ button {
 
 resume-prestations-card {
   width: 100%;
+}
+
+three-dots {
+  width: fit-content;
 }

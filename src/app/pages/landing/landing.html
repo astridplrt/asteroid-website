@@ -25,10 +25,9 @@
       <img src="https://ik.imagekit.io/ast/rocket-blue.png?updatedAt=1700558220235" style="width: 30px" class="ms-3" />
     </div>
     <div class="py-4">
-      <p class="fw-bold pb-2">Lorem ipsum dolor sit amet</p>
+      <h2 class="fw-bold pb-2">Créer de l'impact pour propulser vos projets</h2>
       <p>
-        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Univers visuels singuliers et identités qui percutent, faites décoller votre communication.
       </p>
     </div>
     <div class="d-flex justify-content-center">
@@ -64,13 +63,14 @@
         </button>
       </div>
       <div class="slider d-flex" #slider>
-        <div class="slide-item" *ngFor="let src of pictures">
+        <div class="slide-item d-flex justify-content-center" *ngFor="let src of pictures">
           <img [src]="src" alt="" />
         </div>
       </div>
     </div>
     <bracket-button class="d-block mx-auto mt-5" routerLink="/portfolio" routerLinkActive="active">
-      Déc<span class="yellow-detail">o</span>uvrez le p<span class="yellow-detail">o</span>rtfol<span class="yellow-detail"
+      Déc<span class="yellow-detail">o</span>uvrez le p<span class="yellow-detail">o</span>rtfol<span
+        class="yellow-detail"
         >i</span
       >o
     </bracket-button>
@@ -92,34 +92,40 @@
     </svg>
   </div>
   <div class="py-5 my-5">
-    <div class="frame d-md-flex justify-content-between py-5">
-      <div class="prestations d-flex flex-column gap-4">
-        <resume-prestations-card
-          class="mb-5 mb-md-0"
-          titre="Design graphique"
-          presta1="Identité visuelle"
-          presta2="Supports imprimés"
-          presta3="Illustration"
-          presta4="Packaging"
-          presta5="Signalétique">
-        </resume-prestations-card>
-        <div class="text-center">
-          <img src="https://ik.imagekit.io/ast/fun-star-white.png?updatedAt=1700558220163" style="width: 32px" />
-        </div>
+    <div class="frame">
+      <div class="mb-5">
+        <h2 class="text-center text-white">Vous accompagner pour décrocher la lune</h2>
+        <three-dots class="d-block mx-auto mt-2" color="yellow"></three-dots>
       </div>
-      <div class="prestations d-flex flex-column gap-4">
-        <div class="text-center">
-          <img src="https://ik.imagekit.io/ast/rocket-white.png?updatedAt=1700558220143" style="width: 36px" />
+      <div class="d-md-flex justify-content-between py-5">
+        <div class="prestations d-flex flex-column gap-4">
+          <resume-prestations-card
+            class="mb-5 mb-md-0"
+            titre="Design graphique"
+            presta1="Identité visuelle"
+            presta2="Supports imprimés"
+            presta3="Illustration"
+            presta4="Packaging"
+            presta5="Signalétique">
+          </resume-prestations-card>
+          <div class="text-center">
+            <img src="https://ik.imagekit.io/ast/fun-star-white.png?updatedAt=1700558220163" style="width: 32px" />
+          </div>
         </div>
-        <resume-prestations-card
-          class="align-self-end"
-          titre="Digital"
-          presta1="Web design"
-          presta2="UI/UX"
-          presta3="Développement web"
-          presta4="Motion"
-          presta5="Réseaux sociaux">
-        </resume-prestations-card>
+        <div class="prestations d-flex flex-column gap-4">
+          <div class="text-center">
+            <img src="https://ik.imagekit.io/ast/rocket-white.png?updatedAt=1700558220143" style="width: 36px" />
+          </div>
+          <resume-prestations-card
+            class="align-self-end"
+            titre="Digital"
+            presta1="Web design"
+            presta2="UI/UX"
+            presta3="Développement web"
+            presta4="Motion"
+            presta5="Réseaux sociaux">
+          </resume-prestations-card>
+        </div>
       </div>
     </div>
   </div>
