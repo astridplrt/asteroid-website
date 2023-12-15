@@ -14,26 +14,6 @@
   color: $white;
 }
 
-.waves {
-  width: 100%;
-  overflow: hidden;
-}
-
-.top-waves {
-  top: -1px;
-}
-
-.bottom-waves {
-  bottom: -1px;
-}
-
-.waves svg {
-  display: block;
-  height: 80px;
-  width: 100%;
-  fill: $white;
-}
-
 .big-logo {
   width: 500px;
   height: auto;
@@ -42,12 +22,6 @@
 .head-line {
   text-align: center;
   font-size: 2.1em;
-}
-
-.sub-line {
-  text-align: center;
-  font-size: 2.8em;
-  font-weight: 700;
 }
 
 .presentation-section img {

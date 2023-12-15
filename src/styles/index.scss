@@ -80,7 +80,8 @@ h2 {
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 2.8em;
+  font-weight: 700;
 }
 
 .text-big {
@@ -126,4 +127,32 @@ bracket-button {
   font-weight: 700;
   font-size: 0.68em;
   text-transform: uppercase;
+}
+
+.waves {
+  width: 100%;
+  overflow: hidden;
+}
+
+.waves svg {
+  display: block;
+  height: 80px;
+  width: 100%;
+  fill: $white;
+}
+
+.top-waves {
+  top: -1px;
+}
+
+.bottom-waves {
+  bottom: -1px;
+}
+
+.ms-auto {
+  margin-left: auto;
+}
+
+.me-auto {
+  margin-right: auto;
 }

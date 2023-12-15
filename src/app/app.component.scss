@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 header {
   z-index: 10;
@@ -6,11 +6,11 @@ header {
 
 .header-logo {
   cursor: pointer;
-}
 
-.header-logo img {
-  width: 60px;
-  height: auto;
+  img {
+    width: 60px;
+    height: auto;
+  }
 }
 
 .menu-item {
@@ -22,39 +22,52 @@ header {
   cursor: pointer;
   transition: all 200ms ease-in-out;
   position: relative;
+
+  &:hover {
+    color: $primary;
+  }
+
+  .active {
+    color: $primary;
+  }
+
+  // svg {
+  //   position: absolute;
+  //   left: -20%;
+  //   top: -44%;
+  //   width: 140%;
+  //   height: 160%;
+  //   opacity: 0;
+  //   stroke-dasharray: 1500;
+  //   stroke-dashoffset: 1500;
+  //   transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
+  // }
+
+  //.active svg {
+  //   opacity: 1;
+  //   stroke-dashoffset: 0;
+  //   transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  // }
 }
-
-.menu-item:hover {
-  color: $primary;
-}
-
-// .menu-item svg {
-//   position: absolute;
-//   left: -20%;
-//   top: -44%;
-//   width: 140%;
-//   height: 160%;
-//   opacity: 0;
-//   stroke-dasharray: 1500;
-//   stroke-dashoffset: 1500;
-//   transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
-// }
-
-.menu-item.active {
-  color: $primary;
-}
-
-// .menu-item.active svg {
-//   opacity: 1;
-//   stroke-dashoffset: 0;
-//   transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-// }
 
 footer {
-  text-align: center;
-  text-transform: uppercase;
+  background-color: $primary;
+  color: $white;
 }
 
-.footer {
-  padding: 20px;
+.details {
+  width: fit-content;
+
+  img {
+    width: 30px;
+  }
+}
+
+.footer-item {
+  font-size: 1.1em;
+  color: $white;
+
+  &:hover {
+    color: $secondary;
+  }
 }

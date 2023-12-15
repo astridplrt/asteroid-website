@@ -18,12 +18,36 @@
     </a>
   </div>
 </header>
+
 <div class="page-content">
   <router-outlet></router-outlet>
 </div>
-<footer>
-  <hr />
-  <div class="footer">Here's a footer</div>
+
+<footer class="mt-5">
+  <div class="footer-content frame pt-5 mt-4 pb-4">
+    <div class="d-flex justify-content-between">
+      <div>
+        <img src="assets\images\logo-color-white.png" alt="">
+      </div>
+      <div class="details text-end">
+        <h4 class="fw-bold mb-4"><span class="text-big">Asteroid Studio</span></h4>
+        <h4>06 86 24 74 88</h4>
+        <h4>astrid.polart@gmail.com</h4>
+        <div class="d-flex justify-content-between pt-4 mt-4">
+          <img src="https://ik.imagekit.io/ast/rocket-white.png?updatedAt=1700558220143" alt="" />
+          <img src="https://ik.imagekit.io/ast/rocket-white.png?updatedAt=1700558220143" alt="" />
+          <img src="https://ik.imagekit.io/ast/rocket-white.png?updatedAt=1700558220143" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="mt-5 pt-5 d-flex justify-content-between">
+      <div class="d-flex gap-4">
+        <a class="footer-item" routerLink="/about">Politique de confidentialité</a>
+        <a class="footer-item" routerLink="/about">Mentions légales</a>
+      </div>
+      <p>© 2023 Asteroid Studio | Astrid Polart | Tous droits réservés</p>
+    </div>
+  </div>
 </footer>
 
 <!-- <ng-template #handdrawborder>
