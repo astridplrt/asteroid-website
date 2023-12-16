@@ -3,8 +3,9 @@
     <img class="d-none" src="assets\images\symbol-1-color-white.png" alt="logo-asteroid-website" />
     <img src="assets\images\symbol-1-color-green.png" alt="logo-asteroid-website" />
   </div>
-  <div class="menu d-flex">
-    <a class="menu-item" routerLink="/landing" routerLinkActive="active-link">
+  <div class="menu d-flex" [ngClass]="rla.isActive ? 'active-landing' : ''">
+    <!-- [class.active-landing]="rla.isActive" -->
+    <a class="menu-item" routerLink="/landing" routerLinkActive="active-link" #rla="routerLinkActive">
       accueil
       <!-- <ng-container *ngTemplateOutlet="handdrawborder"></ng-container> -->
     </a>

@@ -50,6 +50,18 @@ header {
   // }
 }
 
+.active-landing .menu-item {
+  color: $white;
+  
+  &:hover {
+    color: $secondary;
+  }
+
+  &.active-link {
+    color: $secondary;
+  }
+}
+
 footer {
   background-color: $primary;
   color: $white;
