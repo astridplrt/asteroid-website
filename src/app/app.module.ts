@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Components } from './components/module';
@@ -11,6 +10,7 @@ import { ContactPage } from './pages/contact/contact';
 import { AmbrussumPage } from './pages/portfolio-detail/ambrussum';
 import { AnfaPage } from './pages/portfolio-detail/anfa';
 import { OpenworkersPage } from './pages/portfolio-detail/openworkers';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,8 @@ import { OpenworkersPage } from './pages/portfolio-detail/openworkers';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    Components
+    Components,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

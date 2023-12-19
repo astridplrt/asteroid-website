@@ -1,0 +1,29 @@
+@import "./variables";
+
+.label {
+    font-weight: bold;
+    display: block;
+}
+
+input, textarea {
+    border: 1px solid $primary;
+    border-radius: 12px;
+    width: 100%;
+    outline: none;
+
+    &:focus, &:focus-visible {
+        outline: 2px solid $primary;
+    }
+}
+
+button {
+    background-color: $primary;
+    border: none;
+    border-radius: 12px;
+    color: $white;
+    width: fit-content;
+
+    &:disabled {
+        background-color: #a3cfc6;
+    }
+}
