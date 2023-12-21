@@ -46,6 +46,12 @@ body {
   min-height: 100vh;
   justify-content: space-between;
   background-color: $white;
+  overflow: hidden;
+  padding: 0 16px;
+  
+    @include media-breakpoint-up(md) {
+      padding: 0;
+    }
 }
 
 a {
@@ -63,15 +69,23 @@ p {
 }
 
 .frame {
-  width: 75vw;
+  width: 100%;
   max-width: 90rem;
   margin: auto;
+
+  @include media-breakpoint-up(md) {
+    width: 75vw;
+  }
 }
 
 h1 {
   font-family: 'worldOfWater', Copperplate, fantasy;
-  font-size: 6em;
+  font-size: 4.8em;
   color: $primary;
+
+  @include media-breakpoint-up(md) {
+    font-size: 6em;
+  }
 }
 
 h2 {
@@ -80,8 +94,12 @@ h2 {
 }
 
 h3 {
-  font-size: 2.8em;
+  font-size: 2.4em;
   font-weight: 700;
+  
+  @include media-breakpoint-up(md) {
+    font-size: 2.8em;
+  }
 }
 
 .text-big {
@@ -136,9 +154,13 @@ bracket-button {
 
 .waves svg {
   display: block;
-  height: 80px;
+  height: 30px;
   width: 100%;
   fill: $white;
+  
+  @include media-breakpoint-up(md) {
+    height: 80px;
+  }
 }
 
 .top-waves {

@@ -15,13 +15,21 @@
 }
 
 .big-logo {
-  width: 500px;
+  width: 80%;
   height: auto;
+  
+  @include media-breakpoint-up(md) {
+    width: 500px;
+  }
 }
 
 .head-line {
   text-align: center;
-  font-size: 2.1em;
+  font-size: 1.8em;
+  
+  @include media-breakpoint-up(md) {
+    font-size: 2.1em;
+  }
 }
 
 .presentation-section img {
@@ -82,7 +90,11 @@ button {
 }
 
 .prestations {
+    width: 80%;
+    
+    @include media-breakpoint-up(md) {
     width: 42%;
+  }
 }
 
 resume-prestations-card {

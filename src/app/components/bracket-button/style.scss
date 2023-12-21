@@ -1,25 +1,34 @@
 @import 'variables';
+@import 'mixins';
 
 button {
-   background: none;
-   border: none;
+  background: none;
+  border: none;
 }
 
 .box {
-    color: $primary;
-    width: fit-content;
-    font-size: 1.4em;
-    font-weight: bold;
-    transition: all ease-in-out 200ms;
-    cursor: pointer;
+  color: $primary;
+  width: fit-content;
+  font-size: 1.4em;
+  font-weight: bold;
+  transition: all ease-in-out 200ms;
+  cursor: pointer;
+
+  .text {
+    max-width: 182px; // to force the div to shrink to the text width when wrapping in multiple lines
+
+    @include media-breakpoint-up(md) {
+      max-width: none;
+    }
+  }
 }
 
 .half-circle {
-    height: 34px;
-    width: 17px;
-    border-color: $primary; 
-    border-style: solid;
-    transition: all ease-in-out 200ms;
+  height: 34px;
+  width: 17px;
+  border-color: $primary;
+  border-style: solid;
+  transition: all ease-in-out 200ms;
 }
 
 .left {
@@ -33,21 +42,21 @@ button {
 }
 
 .box:hover {
-    .left {
-       transform: translateX(-20px);
-    }
-    
-    .right {
-       transform: translateX(20px);
-    }
-   }
+  .left {
+    transform: translateX(-20px);
+  }
+
+  .right {
+    transform: translateX(20px);
+  }
+}
 
 .box:active {
-    .left {
-       transform: translateX(0px);
-    }
-    
-    .right {
-       transform: translateX(0px);
-    }
-   }
+  .left {
+    transform: translateX(0px);
+  }
+
+  .right {
+    transform: translateX(0px);
+  }
+}
