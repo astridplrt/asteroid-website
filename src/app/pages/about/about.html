@@ -31,9 +31,9 @@
       Tout projet en lien avec la création graphique : identité visuelle, supports imprimés, illustration, communication
       digitale ... Voici un petit aperçu des prestations que je peux fournir, de façon non exhaustive :
     </p>
-    <div class="row pt-5">
+    <div class="row pt-5 gap-5 gap-md-0">
       <prestations-card
-        class="col"
+        class="col-12 col-md-6 p-0 pe-md-3"
         titre="Design graphique"
         [prestas]="[
           {
@@ -55,9 +55,10 @@
           {
             name:'Packaging', 
             text:''
-          }]"></prestations-card>
+          }]">
+      </prestations-card>
       <prestations-card
-        class="col"
+        class="col-12 col-md-6 p-0 ps-md-3"
         titre="Digital"
         [prestas]="[
           {
@@ -75,7 +76,8 @@
           {
             name:'Motion', 
             text:'Animation de logo, d\'infographie, d\'illustration, storyboard, vidéo promotionnelle ...'
-          }]"></prestations-card>
+          }]">
+      </prestations-card>
     </div>
     <h5 class="mt-5 pt-5 text-center fw-bold">Vous avez un projet ? Laissez-moi un message :</h5>
     <bracket-button class="d-block mx-auto mt-4 pt-3" routerLink="/contact" routerLinkActive="active">

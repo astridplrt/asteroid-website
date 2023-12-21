@@ -6,9 +6,9 @@
   <div class="my-5">
     <p class="fw-bold">Asteroid Studio</p>
     <p>12 rue de Porspol, 29660 Carantec</p>
-    <div class="d-flex gap-3">
+    <div class="d-md-flex gap-3">
       <p>06 86 24 71 88</p>
-      <p>|</p>
+      <p class="d-none d-md-inline">|</p>
       <p>astrid.polart@gmail.com</p>
     </div>
   </div>
@@ -16,34 +16,35 @@
     <h2>Une question, un projet ? Discutons-en :</h2>
     <three-dots class="mt-2 mb-4" color="blue"></three-dots>
   </div>
-  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-contact d-flex flex-column gap-4">
-    <div class="d-flex justify-content-between gap-5">
-      <div class="flex-grow-1">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-contact">
+    <div class="d-md-flex justify-content-between gap-5 mb-md-4">
+      <div class="flex-grow-1 mb-3">
         <label for="name" class="label">Nom complet *</label>
         <input type="text" autocomplete="name" formControlName="name" id="name" required class="p-2 mt-2" />
       </div>
-      <div class="flex-grow-1">
+      <div class="flex-grow-1 mb-3">
         <label for="company" class="label">Entreprise / organisation <span>(facultatif)</span></label>
         <input type="text" formControlName="company" id="company" class="p-2 mt-2" />
       </div>
     </div>
 
-    <div class="d-flex justify-content-between gap-5">
-      <div class="flex-grow-1">
+    <div class="d-md-flex justify-content-between gap-5 mb-md-4">
+      <div class="flex-grow-1 mb-3">
         <label for="phone" class="label">Téléphone *</label>
         <input type="tel" autocomplete="tel" formControlName="phone" id="phone" required class="p-2 mt-2" />
       </div>
-      <div class="flex-grow-1">
+      <div class="flex-grow-1 mb-3">
         <label for="email" class="label">Adresse mail *</label>
         <input type="email" autocomplete="email" formControlName="email" id="email" required class="p-2 mt-2" />
       </div>
     </div>
 
-    <div class="w-100">
+    <div class="w-100 mb-md-4 mb-3">
       <label for="object" class="label">Objet *</label>
       <input type="text" formControlName="object" id="object" required class="p-2 mt-2" />
     </div>
-    <div class="w-100">
+
+    <div class="w-100 mb-md-4 mb-3">
       <label for="message" class="label">Message *</label>
       <textarea formControlName="message" id="message" required rows="3" class="p-2 mt-2"></textarea>
     </div>
