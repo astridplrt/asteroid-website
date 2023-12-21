@@ -20,10 +20,10 @@
     <div class="d-flex justify-content-between gap-5">
       <div class="flex-grow-1">
         <label for="name" class="label">Nom complet *</label>
-        <input type="text" formControlName="name" id="name" required class="p-2 mt-2" />
+        <input type="text" autocomplete="name" formControlName="name" id="name" required class="p-2 mt-2" />
       </div>
       <div class="flex-grow-1">
-        <label for="company" class="label">Entreprise / organisation</label>
+        <label for="company" class="label">Entreprise / organisation <span>(facultatif)</span></label>
         <input type="text" formControlName="company" id="company" class="p-2 mt-2" />
       </div>
     </div>
@@ -31,7 +31,7 @@
     <div class="d-flex justify-content-between gap-5">
       <div class="flex-grow-1">
         <label for="phone" class="label">Téléphone *</label>
-        <input type="tel" formControlName="phone" id="phone" required class="p-2 mt-2" />
+        <input type="tel" autocomplete="tel" formControlName="phone" id="phone" required class="p-2 mt-2" />
       </div>
       <div class="flex-grow-1">
         <label for="email" class="label">Adresse mail *</label>

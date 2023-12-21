@@ -52,7 +52,7 @@ header {
 
 .active-landing .menu-item {
   color: $white;
-  
+
   &:hover {
     color: $secondary;
   }
@@ -67,12 +67,8 @@ footer {
   color: $white;
 }
 
-.details {
-  width: fit-content;
-
-  img {
-    width: 30px;
-  }
+.details img {
+  width: 30px;
 }
 
 .footer-item {

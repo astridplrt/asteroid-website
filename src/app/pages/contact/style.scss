@@ -3,6 +3,11 @@
 .label {
     font-weight: bold;
     display: block;
+
+    span {
+        font-weight: 500;
+        font-style: italic;
+    }
 }
 
 input, textarea {
@@ -14,6 +19,13 @@ input, textarea {
     &:focus, &:focus-visible {
         outline: 2px solid $primary;
     }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px $white inset !important;
 }
 
 button {
