@@ -1,61 +1,88 @@
-<header class="w-100 d-flex position-absolute justify-content-between align-items-center px-5 py-3">
-  <div class="header-logo" routerLink="landing">
-    <img class="d-none" src="assets\images\symbol-1-color-white.png" alt="logo-asteroid-website" />
-    <img src="assets\images\symbol-1-color-green.png" alt="logo-asteroid-website" />
-  </div>
-  <div class="menu d-flex" [ngClass]="rla.isActive ? 'active-landing' : ''">
-    <!-- [class.active-landing]="rla.isActive" -->
-    <a class="menu-item" routerLink="/landing" routerLinkActive="active-link" #rla="routerLinkActive">
-      accueil
-      <!-- <ng-container *ngTemplateOutlet="handdrawborder"></ng-container> -->
-    </a>
-    <a class="menu-item" routerLink="/about" routerLinkActive="active-link">
-      à propos
-      <!-- <ng-container *ngTemplateOutlet="handdrawborder"></ng-container> -->
-    </a>
-    <a class="menu-item" routerLink="/portfolio" routerLinkActive="active-link">
-      portfolio
-      <!-- <ng-container *ngTemplateOutlet="handdrawborder"></ng-container> -->
-    </a>
-    <a class="menu-item" routerLink="/contact" routerLinkActive="active-link">
-      contact
-      <!-- <ng-container *ngTemplateOutlet="handdrawborder"></ng-container> -->
-    </a>
-  </div>
-</header>
-
-<div class="page-content">
-  <router-outlet></router-outlet>
-</div>
-
-<footer class="mt-5">
-  <div class="footer-content frame pt-5 mt-4 pb-4">
-    <div class="d-flex justify-content-between">
+<div>
+  <header class="w-100 d-flex position-absolute justify-content-between align-items-center px-md-5 py-3">
+    <div class="header-logo" routerLink="landing">
+      <img src="assets\images\symbol-1-color-green.png" alt="logo-asteroid-website" />
+    </div>
+    <div class="menu d-none d-md-flex" [ngClass]="{ 'active-landing': rla.isActive }">
+      <a class="menu-item" routerLink="/landing" routerLinkActive="active-link" #rla="routerLinkActive">
+        accueil
+        <!-- <ng-container *ngTemplateOutlet="handdrawborder"></ng-container> -->
+      </a>
+      <a class="menu-item" routerLink="/about" routerLinkActive="active-link"> à propos </a>
+      <a class="menu-item" routerLink="/portfolio" routerLinkActive="active-link"> portfolio </a>
+      <a class="menu-item" routerLink="/contact" routerLinkActive="active-link"> contact </a>
+    </div>
+    <div
+      class="burger d-flex flex-column justify-content-between d-md-none"
+      [ngClass]="{ 'landing-burger': rla.isActive && !isOpen }"
+      (click)="onClick()">
+      <div class="burger-line"></div>
+      <div class="burger-line"></div>
+      <div class="burger-line"></div>
+    </div>
+    <div
+      class="popup d-flex d-md-none flex-column justify-content-center align-items-center gap-4"
+      [ngClass]="isOpen ? 'd-flex' : 'd-none'">
       <div>
-        <img src="assets\images\logo-color-white.png" alt="">
+        <a class="popup-menu-item" routerLink="/landing" routerLinkActive="active-link" (click)="onClick()">
+          accueil
+          <div class="underline mt-1"></div>
+        </a>
       </div>
-      <div class="details">
-        <h5 class="fw-bold mb-3"><span class="text-big">Asteroid Studio</span></h5>
-        <h5 class="m-0">12 rue de Porspol</h5>
-        <h5>29660 Carantec</h5>
-        <h5>06 86 24 74 88</h5>
-        <h5>astrid.polart@gmail.com</h5>
-        <div class="d-flex justify-content-between pt-4 mt-4">
-          <img src="https://ik.imagekit.io/ast/rocket-white.png?updatedAt=1700558220143" alt="" />
-          <img src="https://ik.imagekit.io/ast/rocket-white.png?updatedAt=1700558220143" alt="" />
-          <img src="https://ik.imagekit.io/ast/rocket-white.png?updatedAt=1700558220143" alt="" />
+      <div>
+        <a class="popup-menu-item" routerLink="/about" routerLinkActive="active-link" (click)="onClick()">
+          à propos
+          <div class="underline mt-1"></div>
+        </a>
+      </div>
+      <div>
+        <a class="popup-menu-item" routerLink="/portfolio" routerLinkActive="active-link" (click)="onClick()">
+          portfolio
+          <div class="underline mt-1"></div>
+        </a>
+      </div>
+      <div>
+        <a class="popup-menu-item" routerLink="/contact" routerLinkActive="active-link" (click)="onClick()">
+          contact
+          <div class="underline mt-1"></div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-content">
+    <router-outlet></router-outlet>
+  </div>
+
+  <footer class="mt-5">
+    <div class="footer-content frame pt-5 mt-4 pb-4">
+      <div class="d-md-flex justify-content-between gap-5">
+        <div class="footer-logo pb-5 pb-md-0">
+          <img src="assets\images\logo-color-white.png" alt="" />
+        </div>
+        <div class="details text-center text-md-start">
+          <h5 class="fw-bold mb-3"><span class="text-big">Asteroid Studio</span></h5>
+          <h5 class="m-0">12 rue de Porspol</h5>
+          <h5>29660 Carantec</h5>
+          <h5>06 86 24 74 88</h5>
+          <h5>astrid.polart@gmail.com</h5>
+          <div class="d-flex justify-content-center gap-5 justify-content-md-between pt-5">
+            <img src="https://ik.imagekit.io/ast/rocket-white.png?updatedAt=1700558220143" alt="" />
+            <img src="https://ik.imagekit.io/ast/rocket-white.png?updatedAt=1700558220143" alt="" />
+            <img src="https://ik.imagekit.io/ast/rocket-white.png?updatedAt=1700558220143" alt="" />
+          </div>
         </div>
       </div>
-    </div>
-    <div class="mt-5 pt-5 d-flex justify-content-between">
-      <div class="d-flex gap-4">
-        <a class="footer-item" routerLink="/about">Politique de confidentialité</a>
-        <a class="footer-item" routerLink="/about">Mentions légales</a>
+      <div class="mt-5 pt-5 d-xl-flex justify-content-between mx-auto">
+        <div class="d-md-flex justify-content-center gap-5 pb-5 pb-md-4 pb-xl-0 text-center">
+          <a class="footer-item d-block mb-3 mb-md-0" routerLink="/about">Politique de confidentialité</a>
+          <a class="footer-item d-block" routerLink="/about">Mentions légales</a>
+        </div>
+        <p class="text-center">© 2023 Asteroid Studio | Astrid Polart | Tous droits réservés</p>
       </div>
-      <p>© 2023 Asteroid Studio | Astrid Polart | Tous droits réservés</p>
     </div>
-  </div>
-</footer>
+  </footer>
+</div>
 
 <!-- <ng-template #handdrawborder>
   <svg

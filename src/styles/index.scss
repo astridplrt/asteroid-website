@@ -47,11 +47,6 @@ body {
   justify-content: space-between;
   background-color: $white;
   overflow: hidden;
-  padding: 0 16px;
-  
-    @include media-breakpoint-up(md) {
-      padding: 0;
-    }
 }
 
 a {
@@ -72,8 +67,10 @@ p {
   width: 100%;
   max-width: 90rem;
   margin: auto;
-
-  @include media-breakpoint-up(md) {
+  padding: 0 16px;
+    
+    @include media-breakpoint-up(md) {
+    padding: 0;
     width: 75vw;
   }
 }

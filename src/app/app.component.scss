@@ -1,7 +1,13 @@
 @import 'variables';
+@import 'mixins';
 
 header {
   z-index: 10;
+  padding: 0 16px;
+
+  @include media-breakpoint-up(md) {
+    padding: auto;
+  }
 }
 
 .header-logo {
@@ -19,9 +25,8 @@ header {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-left: 4em;
-  cursor: pointer;
   transition: all 200ms ease-in-out;
-  position: relative;
+  // position: relative;
 
   &:hover {
     color: $primary;
@@ -62,9 +67,51 @@ header {
   }
 }
 
+.burger {
+  height: 24px;
+  z-index: 100;
+
+  .burger-line {
+    height: 4px;
+    width: 32px;
+    background-color: $primary;
+    border-radius: 30px;
+  }
+}
+
+.landing-burger .burger-line {
+  background-color: $white;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $white;
+
+  .popup-menu-item {
+    font-size: 1.4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 200ms ease-in-out;
+
+    &.active-link {
+      color: $primary;
+    }
+  }
+}
+
 footer {
   background-color: $primary;
   color: $white;
+
+  .footer-logo img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .details img {
