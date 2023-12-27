@@ -17,23 +17,23 @@
     <three-dots class="mt-2 mb-4" color="blue"></three-dots>
   </div>
   <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-contact">
-    <div class="d-md-flex justify-content-between gap-5 mb-md-4">
-      <div class="flex-grow-1 mb-3">
+    <div class="d-md-flex justify-content-between mb-md-4">
+      <div class="mb-3 half-width">
         <label for="name" class="label">Nom complet *</label>
         <input type="text" autocomplete="name" formControlName="name" id="name" required class="p-2 mt-2" />
       </div>
-      <div class="flex-grow-1 mb-3">
-        <label for="company" class="label">Entreprise / organisation <span>(facultatif)</span></label>
+      <div class="mb-3 half-width">
+        <label for="company" class="label">Société / organisation <span>(facultatif)</span></label>
         <input type="text" formControlName="company" id="company" class="p-2 mt-2" />
       </div>
     </div>
 
-    <div class="d-md-flex justify-content-between gap-5 mb-md-4">
-      <div class="flex-grow-1 mb-3">
+    <div class="d-md-flex justify-content-between mb-md-4">
+      <div class="mb-3 half-width">
         <label for="phone" class="label">Téléphone *</label>
         <input type="tel" autocomplete="tel" formControlName="phone" id="phone" required class="p-2 mt-2" />
       </div>
-      <div class="flex-grow-1 mb-3">
+      <div class="mb-3 half-width">
         <label for="email" class="label">Adresse mail *</label>
         <input type="email" autocomplete="email" formControlName="email" id="email" required class="p-2 mt-2" />
       </div>
@@ -46,7 +46,7 @@
 
     <div class="w-100 mb-md-4 mb-3">
       <label for="message" class="label">Message *</label>
-      <textarea formControlName="message" id="message" required rows="3" class="p-2 mt-2"></textarea>
+      <textarea formControlName="message" id="message" required rows="5" class="p-2 mt-2"></textarea>
     </div>
 
     <button type="submit" [disabled]="form.invalid" class="py-3 px-5 text-uppercase fw-bold">Envoyer</button>
