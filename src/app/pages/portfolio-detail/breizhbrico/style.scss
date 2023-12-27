@@ -1,0 +1,51 @@
+img {
+  border-radius: 12px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.first-logo {
+  background-color: #dd6c51;
+  border-radius: 12px;
+}
+
+.half-width {
+  width: 48%;
+
+  img {
+    min-height: 100%;
+  }
+}
+
+.logo-versions {
+  border-radius: 12px;
+  background-color: #2f5971;
+}
+
+.logo-on-background {
+  position: relative;
+
+  img.filter {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.4);
+  }
+
+  .logo-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.rejected-propositions {
+    background-color: #f8f8f8;
+    border-radius: 12px;
+}
+
+.roughts img {
+    filter: contrast(110%) brightness(120%);
+}

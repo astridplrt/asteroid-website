@@ -1,7 +1,8 @@
 import { Component } from "@angular/core";
 
 @Component ({
-    templateUrl: './index.html'
+    templateUrl: './index.html',
+    styleUrls: ['./style.scss']
 })
 export class DirectImmoPage {
 }

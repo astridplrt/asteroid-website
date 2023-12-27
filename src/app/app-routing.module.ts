@@ -7,7 +7,6 @@ import { PortfolioPage } from './pages/portfolio/portfolio';
 import { AmbrussumPage } from './pages/portfolio-detail/ambrussum';
 import { AnfaPage } from './pages/portfolio-detail/anfa';
 import { ATS3Page } from './pages/portfolio-detail/ats3';
-import { AvoinePage } from './pages/portfolio-detail/avoine';
 import { BreizhBricoPage } from './pages/portfolio-detail/breizhbrico';
 import { CarantecPage } from './pages/portfolio-detail/carantec';
 import { DevcatPage } from './pages/portfolio-detail/devcat';
@@ -18,6 +17,7 @@ import { LaillePage } from './pages/portfolio-detail/laille';
 import { OpenworkersPage } from './pages/portfolio-detail/openworkers';
 import { RetroLegendPage } from './pages/portfolio-detail/retrolegend';
 import { SpiAsymetriquePage } from './pages/portfolio-detail/spiasymetrique';
+import { VolagePage } from './pages/portfolio-detail/volage';
 
 @NgModule({
   exports: [RouterModule],
@@ -50,10 +50,6 @@ import { SpiAsymetriquePage } from './pages/portfolio-detail/spiasymetrique';
       {
         path: 'ats3',
         component: ATS3Page
-      },
-      {
-        path: 'avoine',
-        component: AvoinePage
       },
       {
         path: 'breizhbrico',
@@ -94,6 +90,10 @@ import { SpiAsymetriquePage } from './pages/portfolio-detail/spiasymetrique';
       {
         path: 'spiasymetrique',
         component: SpiAsymetriquePage
+      },
+      {
+        path: 'volage',
+        component: VolagePage
       },
       {
         path: '**',

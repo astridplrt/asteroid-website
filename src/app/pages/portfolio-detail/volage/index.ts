@@ -4,5 +4,5 @@ import { Component } from "@angular/core";
     templateUrl: './index.html',
     styleUrls: ['./style.scss']
 })
-export class ForceWestPage {
+export class VolagePage {
 }
