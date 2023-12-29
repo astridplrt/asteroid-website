@@ -1,6 +1,33 @@
+@import 'variables';
+@import 'mixins';
+
 img {
-    border-radius: 12px;
-    width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+.double {
+  :first-child {
+    width: 36%;
     object-fit: cover;
-    display: block;
   }
+
+  :last-child {
+    width: 60%;
+    object-fit: cover;
+    
+    
+    @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+  }
+}
+
+.line {
+  height: 90vh;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+}

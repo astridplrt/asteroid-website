@@ -17,6 +17,7 @@ import { DirectImmoPage } from './pages/portfolio-detail/directimmo';
 import { ForceWestPage } from './pages/portfolio-detail/forcewest';
 import { ImpressionsChinoisesPage } from './pages/portfolio-detail/impressionschinoises';
 import { LaillePage } from './pages/portfolio-detail/laille';
+import { OctopusPage } from './pages/portfolio-detail/octopus';
 import { OldDoorForestPage } from './pages/portfolio-detail/olddoorforest';
 import { OpenworkersPage } from './pages/portfolio-detail/openworkers';
 import { RetroLegendPage } from './pages/portfolio-detail/retrolegend';
@@ -94,6 +95,10 @@ import { VolagePage } from './pages/portfolio-detail/volage';
       {
         path: 'laille',
         component: LaillePage
+      },
+      {
+        path: 'octopus',
+        component: OctopusPage
       },
       {
         path: 'olddoorforest',
