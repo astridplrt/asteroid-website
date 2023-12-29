@@ -1,0 +1,20 @@
+img {
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
+
+.triple {
+  img {
+    width: 70%;
+  }
+
+  .two {
+    margin-left: auto;
+    transform: translateY(-60px);
+  }
+
+  .three {
+    transform: translateY(-120px);
+  }
+}

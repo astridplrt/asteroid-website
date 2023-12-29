@@ -114,9 +114,15 @@ footer {
   }
 }
 
-.details img {
-  width: 30px;
-}
+.details {
+  a {
+    color: $white;
+  }
+
+  img {
+    width: 30px;
+  }
+} 
 
 .footer-item {
   font-size: 1.1em;

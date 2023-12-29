@@ -41,8 +41,12 @@ export class ContactPage {
     }
 
     private sendMail(data:any) {
-        return new Promise<void>((resolve, reject) => {
-            setTimeout(() => Math.random() < .5 ? resolve() : reject(), 2000)
+        return fetch('https://echo.workers.rocks', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'content-type': 'application/json'
+            }
         })
     }
 }
