@@ -16,7 +16,12 @@
     <h2>Une question, un projet ? Discutons-en :</h2>
     <three-dots class="mt-2 mb-4" color="blue"></three-dots>
   </div>
-  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-contact">
+
+  <form
+    [formGroup]="form"
+    (ngSubmit)="onSubmit()"
+    class="form-contact"
+    [ngClass]="state  === SendState.Init ? 'd-block' : 'd-none'">
     <div class="d-md-flex justify-content-between mb-md-4">
       <div class="mb-3 half-width">
         <label for="name" class="label">Nom complet *</label>
@@ -40,15 +45,48 @@
     </div>
 
     <div class="w-100 mb-md-4 mb-3">
-      <label for="object" class="label">Objet *</label>
-      <input type="text" formControlName="object" id="object" required class="p-2 mt-2" />
-    </div>
-
-    <div class="w-100 mb-md-4 mb-3">
       <label for="message" class="label">Message *</label>
       <textarea formControlName="message" id="message" required rows="5" class="p-2 mt-2"></textarea>
     </div>
 
     <button type="submit" [disabled]="form.invalid" class="py-3 px-5 text-uppercase fw-bold">Envoyer</button>
   </form>
+
+  <div class="send pt-5 mt-5" [ngClass]="state  === SendState.Sent ? 'd-block' : 'd-none'">
+    <div class="py-5">
+      <img
+        src="https://ik.imagekit.io/ast/Asteroid%20icons/rocket-blue.png?updatedAt=1703690967647"
+        alt=""
+        class="d-block mx-auto mb-5" />
+      <p class="text-big fw-bold text-blue text-center">Votre message a bien été envoyé !</p>
+    </div>
+  </div>
+
+  <div class="pt-5 mt-5" [ngClass]="state  === SendState.Pending ? 'd-block' : 'd-none'">
+    <div class="spinner d-flex gap-5 mx-auto mb-5">
+      <div class="spinner-circle one"></div>
+      <div class="spinner-circle two"></div>
+      <div class="spinner-circle three"></div>
+    </div>
+    <p class="text-center">Envoi en cours ...</p>
+  </div>
+
+  <div class="error pt-5 mt-5" [ngClass]="state  === SendState.Error ? 'd-block' : 'd-none'">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-blue"><p class="text-big">Houston, nous avons un problème</p></h2>
+      <p class="text-big fw-bold">Votre message n'a pas pu être envoyé</p>
+    </div>
+    <div class="mail mx-auto">
+      <p class="text-center text-blue fw-bold text-big">Vous pouvez l'envoyer directement à l'adresse suivante :</p>
+      <p class="text-center fw-bold">astrid.polart@gmail.com</p>
+      <div class="mt-5">
+        <p class="text-center text-blue fw-bold">
+          Ne vous inquiétez pas, votre message n'est pas perdu. Vous pouvez le copier-coller :
+        </p>
+        <div class="message-content mt-3 p-2">
+          <p>Hello !</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

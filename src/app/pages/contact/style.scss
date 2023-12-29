@@ -1,51 +1,109 @@
-@import "./variables";
-@import "./mixins";
+@import './variables';
+@import './mixins';
 
 .label {
-    font-weight: bold;
-    display: block;
+  font-weight: bold;
+  display: block;
 
-    span {
-        font-weight: 500;
-        font-style: italic;
-    }
+  span {
+    font-weight: 500;
+    font-style: italic;
+  }
 }
 
-input, textarea {
-    border: 1px solid $primary;
-    border-radius: 12px;
-    width: 100%;
-    outline: none;
+input,
+textarea {
+  border: 1px solid $primary;
+  border-radius: 12px;
+  width: 100%;
+  outline: none;
 
-    &:focus, &:focus-visible {
-        outline: 2px solid $primary;
-    }
+  &:focus,
+  &:focus-visible {
+    outline: 2px solid $primary;
+  }
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px $white inset !important;
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px $white inset !important;
 }
 
 button {
-    background-color: $primary;
-    border: none;
-    border-radius: 12px;
-    color: $white;
-    width: fit-content;
+  background-color: $primary;
+  border: none;
+  border-radius: 12px;
+  color: $white;
+  width: fit-content;
 
-    &:disabled {
-        background-color: #a3cfc6;
-    }
+  &:disabled {
+    background-color: #a3cfc6;
+  }
 }
 
 .half-width {
-    width: 48%;
+  width: 48%;
 
-    
-    @include media-breakpoint-down(md) {
-        width: 100%;
-      }
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+
+.send img {
+  width: 80px;
+  height: auto;
+}
+
+.spinner {
+  width: fit-content;
+
+  .spinner-circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 9999px;
+    background-color: $secondary;
+
+    &.one {
+      animation: translation 2s ease-in infinite;
+    }
+
+    &.two {
+      animation: translation 2s 140ms ease-in infinite;
+    }
+
+    &.three {
+      animation: translation 2s 280ms ease-in infinite;
+    }
+  }
+}
+
+@keyframes translation {
+  0% {
+    transform: none;
+  }
+
+  12% {
+    transform: translateY(-48px);
+  }
+
+  25% {
+    transform: none;
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+.error {
+  .mail {
+    width: fit-content;
+  }
+
+  .message-content {
+    border: solid rgb(218, 218, 218) 1px;
+    border-radius: 12px;
+  }
 }

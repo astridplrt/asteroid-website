@@ -18,9 +18,21 @@ img {
   }
 }
 
-.logo-versions {
+.logo-extended {
   border-radius: 12px;
-  background-color: #2f5971;
+  overflow: hidden;
+
+  .dark-blue {
+    background-color: #2f5971;
+  }
+
+  .blue {
+    background-color: #67A0C5;
+  }
+
+  .light-blue {
+    background-color: #D9EEF4;
+  }
 }
 
 .logo-on-background {
@@ -42,10 +54,10 @@ img {
 }
 
 .rejected-propositions {
-    background-color: #f8f8f8;
-    border-radius: 12px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
 }
 
 .roughts img {
-    filter: contrast(110%) brightness(120%);
+  filter: contrast(110%) brightness(120%);
 }
