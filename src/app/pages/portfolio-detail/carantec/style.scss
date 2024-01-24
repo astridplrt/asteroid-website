@@ -1,6 +1,54 @@
+@import 'variables';
+@import 'mixins';
+
 img {
+  border-radius: 12px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.double-logos {
+  div {
     border-radius: 12px;
-    width: 100%;
-    object-fit: cover;
-    display: block;
   }
+
+  img {
+    border-radius: 0px;
+  }
+
+  .background1 {
+    background-color: #ebe2c3;
+
+    img {
+      height: 30%;
+      object-fit: contain;
+    }
+  }
+
+  .background2 {
+    background-color: #262849;
+    width: 32%;
+    height: auto;
+    aspect-ratio: 1/1;
+
+    img {
+      height: 30%;
+      width: auto;
+      object-fit: contain;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+
+      img {
+        width: 24%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.background {
+  background-color: #292f6e; // ref couleur principale logo
+}
