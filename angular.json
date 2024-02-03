@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "asteroid-website:build:production"
+              "buildTarget": "asteroid-website:build:production"
             },
             "development": {
-              "browserTarget": "asteroid-website:build:development"
+              "buildTarget": "asteroid-website:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "asteroid-website:build"
+            "buildTarget": "asteroid-website:build"
           }
         },
         "test": {
