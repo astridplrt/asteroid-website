@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve --port 1234",
     "build": "ng build",
+    "cache:info": "ng cache info",
     "postbuild": "cp dist/index.html dist/404.html",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
