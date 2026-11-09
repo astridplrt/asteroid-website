@@ -4,5 +4,5 @@ import { Component } from "@angular/core";
     templateUrl: './index.html',
     styleUrls: ['./style.scss']
 })
-export class VolagePage {
+export class KiwidiagPage {
 }

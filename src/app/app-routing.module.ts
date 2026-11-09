@@ -15,14 +15,16 @@ import { CarantecPage } from './pages/portfolio-detail/carantec';
 import { DevcatPage } from './pages/portfolio-detail/devcat';
 import { DirectImmoPage } from './pages/portfolio-detail/directimmo';
 import { ForceWestPage } from './pages/portfolio-detail/forcewest';
+import { ImmoDiagPage } from './pages/portfolio-detail/immodiag';
 import { ImpressionsChinoisesPage } from './pages/portfolio-detail/impressionschinoises';
+import { KiwidiagPage } from './pages/portfolio-detail/kiwidiag';
 import { LaillePage } from './pages/portfolio-detail/laille';
 import { OctopusPage } from './pages/portfolio-detail/octopus';
 import { OldDoorForestPage } from './pages/portfolio-detail/olddoorforest';
 import { OpenworkersPage } from './pages/portfolio-detail/openworkers';
 import { RetroLegendPage } from './pages/portfolio-detail/retrolegend';
 import { SpiAsymetriquePage } from './pages/portfolio-detail/spiasymetrique';
-import { VolagePage } from './pages/portfolio-detail/volage';
+import { VocaPage } from './pages/portfolio-detail/voca';
 
 @NgModule({
   exports: [RouterModule],
@@ -89,8 +91,16 @@ import { VolagePage } from './pages/portfolio-detail/volage';
         component: ForceWestPage
       },
       {
+        path: 'immodiag',
+        component: ImmoDiagPage
+      },
+      {
         path: 'impressionschinoises',
         component: ImpressionsChinoisesPage
+      },
+      {
+        path: 'kiwidiag',
+        component: KiwidiagPage
       },
       {
         path: 'laille',
@@ -117,8 +127,8 @@ import { VolagePage } from './pages/portfolio-detail/volage';
         component: SpiAsymetriquePage
       },
       {
-        path: 'volage',
-        component: VolagePage
+        path: 'voca',
+        component: VocaPage
       },
       {
         path: '**',

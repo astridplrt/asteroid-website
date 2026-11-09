@@ -10,7 +10,7 @@ export class LandingPage implements AfterViewInit {
     'https://ik.imagekit.io/ast/Impressions%20chinoises/Outdoor%20Advertising%20Billboard%20Mockup%20PSD.jpg',
     'https://ik.imagekit.io/ast/RLG/logo%20m%C3%A9tal.jpg',
     'https://ik.imagekit.io/ast/Illustration%20Old%20Door%20in%20the%20Forest/old_door_in_the_forest.jpg',
-    'https://ik.imagekit.io/ast/Volage/volage%20lingerie%20mockup.png',
+    'https://ik.imagekit.io/ast/Devcat/devcat-mockup-scene.png',
     'https://ik.imagekit.io/ast/Carantec/carantec%20logo%20mise%20en%20sc%C3%A8ne1.jpg'
   ];
   picture = 1;

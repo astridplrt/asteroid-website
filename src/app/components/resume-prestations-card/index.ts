@@ -25,6 +25,9 @@ export class resumePrestationsCardComponent {
   presta5!: string;
 
   @Input()
+  presta6!: string;
+
+  @Input()
   TLdisplay!: string; // top left display
 
   @Input()
